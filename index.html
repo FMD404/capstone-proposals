@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FMD 404 Capstone Proposals</title>
+<style>
+:root{
+  /* One visual world, shared with the draped poster: white sheet, black rules, one grotesk. */
+  /* Layout: framed sheet. Header bar, hero, then numbered rows 01-05 that open in place. */
+  --paper:#ffffff;
+  --ink:#000000;
+  --mute:#6f6f6f;
+  --tone:#ececec;
+  --font:"Helvetica Neue",Helvetica,Arial,sans-serif;
+  --rule:1px solid var(--ink);
+  --pad:clamp(10px,1.1vw,24px);
+  --gut:clamp(12px,1.6vw,36px);
+  --t-title:clamp(52px,8.2vw,230px);
+  --t-mark:clamp(44px,6vw,170px);
+  --t-q:clamp(26px,3vw,76px);
+  --t-l:clamp(18px,1.45vw,34px);
+  --t-m:clamp(14px,1vw,22px);
+  --t-s:clamp(11px,.72vw,15px);
+  --bar:clamp(38px,2.8vw,64px);
+  --row:clamp(34px,2.3vw,54px);
+  --avail:calc(100vh - 4 * var(--pad) - var(--bar) - 5 * var(--row));
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0}
+body{background:var(--paper);color:var(--ink);font:400 var(--t-m)/1.35 var(--font);-webkit-font-smoothing:antialiased;padding:var(--pad);overflow:hidden}
+button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:pointer;text-align:left}
+button:focus-visible{outline:2px solid var(--ink);outline-offset:-4px}
+.sheet{height:100%;border:var(--rule);display:flex;flex-direction:column;min-height:0}
+.caps{text-transform:uppercase;letter-spacing:.04em;font-size:var(--t-s)}
+.grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:var(--gut);padding:0 var(--pad)}
+
+/* header bar */
+.bar{display:grid;grid-template-columns:3fr 5fr 2fr 2fr;height:var(--bar);border-bottom:var(--rule);flex:none}
+.bar>*{display:flex;align-items:center;padding:0 var(--pad);border-left:var(--rule);min-width:0;white-space:nowrap;overflow:hidden}
+.bar>*:first-child{border-left:0}
+.bar .who span{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:.35em}
+.bar b{font-weight:700}
+
+/* main stack */
+.stack{flex:1;display:flex;flex-direction:column;min-height:0}
+.hero{flex:1;position:relative;min-height:0;display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:var(--gut);padding:var(--pad);grid-template-rows:auto 1fr auto}
+.hero .kw{grid-column:1/6;grid-row:1;font-size:var(--t-l);line-height:1.2}
+.hero .mark{grid-column:10/13;grid-row:1;font-size:var(--t-mark);line-height:.82;letter-spacing:-.03em;margin-top:.04em}
+.hero h1{grid-column:1/13;grid-row:3;margin:0;font-weight:400;font-size:var(--t-title);line-height:.9;letter-spacing:-.035em;white-space:pre-line;text-wrap:balance}
+
+.row{border-top:var(--rule);flex:none}
+.rows>.row:first-child{border-top:0}
+.hero+.rows>.row:first-child{border-top:var(--rule)}
+.rows{display:contents}
+.rowhead{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:var(--gut);padding:0 var(--pad);height:var(--row);align-items:center;width:100%}
+.rowhead .n{grid-column:1/2}
+.rowhead .l{grid-column:2/11}
+.rowhead .g{grid-column:12/13;justify-self:end;width:calc(var(--row)*.52);height:calc(var(--row)*.52)}
+.rowhead:hover .l{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:.35em}
+.row.open .rowhead{border-bottom:var(--rule)}
+.row.open{flex:1;display:flex;flex-direction:column;min-height:0}
+.body{flex:1;overflow-y:auto;min-height:0;padding:var(--pad) 0 0;display:flex;flex-direction:column}
+.body>*{flex:none}
+.body>*:last-child:not(.cells){margin-bottom:var(--pad)}
+.body>.cells:last-child{flex:1 0 auto;border-bottom:0}
+.body::-webkit-scrollbar{width:0}
+
+/* content blocks */
+.q{grid-column:1/11;font-size:var(--t-q);line-height:1.08;letter-spacing:-.015em;margin:0 0 .5em;text-wrap:balance}
+.sub{grid-column:1/8;margin:0 0 1.4em;font-size:var(--t-l);line-height:1.2;padding-left:1.2em}
+.sub li{margin:0 0 .2em}
+.lead{grid-column:1/8;font-size:var(--t-l);line-height:1.3;margin:0 0 1.6em;text-wrap:pretty}
+.cells{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:var(--rule);margin-top:var(--pad)}
+.cells>div{padding:var(--pad);border-left:var(--rule)}
+.cells>div:first-child{border-left:0}
+.cells h3,.txt h3{font-weight:400;font-size:var(--t-l);line-height:1.2;margin:0 0 .6em}
+.cells p,.txt p{margin:0 0 .8em;max-width:38em;text-wrap:pretty}
+.txt{grid-column:1/5}
+.media-grid{grid-column:5/13;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--gut)}
+.media-grid .m{width:min(100%, calc(((var(--avail) - 6em - var(--gut)) / 2) * 16 / 9))}
+.fig{margin:0}
+.fig .m{position:relative;aspect-ratio:16/9;background:var(--tone);overflow:hidden}
+.fig .m>img,.fig .m>video,.fig .m>canvas{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.fig .m .ph{position:absolute;left:10px;bottom:8px;font-size:var(--t-s);color:var(--mute)}
+.fig figcaption{font-size:var(--t-s);line-height:1.35;margin-top:.6em}
+.fig figcaption .meta{display:block}
+.fig figcaption .note{display:block;color:var(--mute);margin-top:.2em}
+.cases{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:var(--gut);padding:0 var(--pad)}
+.exp{grid-column:1/13;display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:var(--gut);row-gap:var(--gut)}
+.exp .big{grid-column:1/8}
+.exp .big .m{width:min(100%, calc((var(--avail) - 4em) * 16 / 9))}
+.exp .side{grid-column:9/13;display:flex;flex-direction:column;gap:var(--gut)}
+.exp .more{grid-column:1/13;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--gut)}
+.exp .fig figcaption,.cases .fig figcaption{font-size:var(--t-m)}
+
+/* hidden index */
+.index{flex:1;overflow-y:auto;min-height:0}
+.index .rowhead{border-bottom:var(--rule)}
+.index .rowhead .nm{grid-column:2/6}
+.index .rowhead .tt{grid-column:6/11;color:var(--mute);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.index .head{padding:0 var(--pad);height:var(--row);display:flex;align-items:center;border-bottom:var(--rule);color:var(--mute)}
+
+/* screensaver: muted slideshow of the student's own media */
+.attract{position:fixed;inset:0;background:var(--paper);display:none;z-index:10;cursor:none;padding:var(--pad)}
+.attract.on{display:block}
+.attract .frame{height:100%;border:var(--rule);display:flex;flex-direction:column}
+.attract .stage{flex:1;position:relative;min-height:0;background:var(--tone);overflow:hidden}
+.attract .stage>img,.attract .stage>video,.attract .stage>canvas{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.attract .stage .card{position:absolute;inset:0;background:var(--paper);display:flex;align-items:flex-end;padding:var(--pad)}
+.attract .stage .card h2{margin:0;font-weight:400;font-size:var(--t-title);line-height:.9;letter-spacing:-.035em;white-space:pre-line}
+.attract .info{flex:none;border-top:var(--rule)}
+.attract .info .rowhead{cursor:none}
+.attract .info .cap{grid-column:2/9;text-transform:none;letter-spacing:0;font-size:var(--t-m);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.attract .info .nm{grid-column:9/13;justify-self:end;white-space:nowrap}
+.attract .progress{height:2px;background:var(--ink);width:0;flex:none}
+
+.hide{display:none !important}
+@media (max-width:760px){
+  body{overflow:auto;height:auto}
+  .sheet{height:auto;min-height:100%}
+  .bar{grid-template-columns:3fr 2fr}
+  .bar .stretch,.bar .project{display:none}
+  .hero{min-height:62vh}
+  .hero .kw{grid-column:1/9}
+  .hero .mark{grid-column:9/13}
+  .txt,.media-grid,.q,.sub,.lead,.exp .big,.exp .side{grid-column:1/13}
+  .media-grid .m,.exp .big .m{width:100%}
+  .media-grid{margin-top:var(--pad)}
+  .cells,.cases,.exp .more,.media-grid{grid-template-columns:1fr}
+  .cells>div{border-left:0;border-top:var(--rule)}
+  .cells>div:first-child{border-top:0}
+  .row.open{flex:none}
+  .body{overflow:visible}
+  .index .rowhead .nm{grid-column:2/12}
+  .index .rowhead .tt{display:none}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none !important;transition:none !important}}
+</style>
+</head>
+<body>
+<div class="sheet">
+  <header class="bar">
+    <button class="who caps" id="who" aria-label="Show all students"><span id="barName">All students</span></button>
+    <div class="stretch"></div>
+    <div class="caps project">Capstone proposal</div>
+    <div class="caps"><b>FMD 404</b></div>
+  </header>
+  <div class="stack" id="stack"></div>
+</div>
+<div class="attract" id="attract" aria-hidden="true">
+  <div class="frame">
+    <div class="stage" id="attractStage"></div>
+    <div class="progress" id="attractProgress"></div>
+    <div class="info"><div class="rowhead caps"><span class="n" id="attractN"></span><span class="cap" id="attractCap"></span><span class="nm" id="attractName"></span></div></div>
+  </div>
+</div>
+
+<script>
+/* When this page runs from a folder on the iMac, students.js (made from the
+   class sheet) is loaded first and replaces the list below. */
+if (location.protocol === "file:") document.write('<script src="students.js"><\/script>');
+</script>
+<script>
+/* ------------------------------------------------------------------
+   DATA. One entry per student, in the order of the class list.
+   Media paths are relative to this file, e.g. "media/dima-abdelhadi/exp-1.mp4".
+   Leave a field out to show its placeholder.
+------------------------------------------------------------------- */
+window.STUDENTS = window.STUDENTS || [
+  "Dima Abdelhadi", "Aya Abdulmannan", "Shams Aboulkheir", "Elhassan Ahmed",
+  "Haneen Ahmed", "Sundus Al-Hamadi", "Suha Alassar", "Noor Alqasimi",
+  "Hala El Khatib", "Joud Elayan", "Shahad Muallemi", "Shrinidhi Mukund",
+  "Fatema Pardiwala", "Hana Safeer", "Maya Tabsh", "James Torio"
+].map(name => ({ name }));
+
+(function () {
+"use strict";
+
+const IDLE_SECONDS = 90;      // screensaver starts after this long without a touch
+const SLIDE_SECONDS = 7;      // each image stays this long; videos play to the end (max 20 s)
+const MARK = "2026";          // large text, top right of the hero
+const SECTIONS = [
+  { n: "01", label: "Design question" },
+  { n: "02", label: "Theoretical work" },
+  { n: "03", label: "Case studies" },
+  { n: "04", label: "Visual experiments" },
+  { n: "05", label: "Practical work" }
+];
+const PH = {
+  keywords: ["Keyword one", "Keyword two", "Keyword three", "Keyword four", "Keyword five"],
+  title: "Project title\nin two lines",
+  question: "The design question, in two lines at most?",
+  abstract: "Abstract, 150 words: what the project is, what it asks and what it will become next semester.",
+  theme: "What the project is about and what it sets out to do.",
+  relevance: "Why it matters, and for whom.",
+  motivation: "Why you chose it.",
+  thText: "Context, history and what your research found. Primary research: interviews, visits, recordings, data you collected.",
+  make: "What you will make next semester, in what form.",
+  showed: "What your visual experiments showed.",
+  questions: "Where you are unsure, and what you want a critic to push on."
+};
+
+const slug = s => String(s).toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+STUDENTS.forEach(s => { s.slug = s.slug || slug(s.name); });
+const bySlug = {}; STUDENTS.forEach(s => { bySlug[s.slug] = s; });
+
+/* ---------- helpers ---------- */
+const $ = id => document.getElementById(id);
+const esc = s => String(s == null ? "" : s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const or = (v, d) => (v === undefined || v === null || v === "" || (Array.isArray(v) && !v.length)) ? d : v;
+function glyph(open){
+  const bar = '<rect x="1" y="9.2" width="18" height="1.6"/>';
+  const stem = open ? "" : '<rect x="9.2" y="1" width="1.6" height="18"/>';
+  return '<svg class="g" viewBox="0 0 20 20" aria-hidden="true">' + bar + stem + "</svg>";
+}
+const isVideo = src => /\.(mp4|webm|mov|m4v)(\?|$)/i.test(src || "");
+function media(src, label, autoplay){
+  if (isVideo(src)) return '<video src="' + esc(src) + '" ' + (autoplay === false ? "" : "autoplay ") + 'muted loop playsinline preload="metadata"></video>';
+  if (src) return '<img src="' + esc(src) + '" alt="">';
+  return '<span class="ph">' + esc(label || "16:9 image") + '</span>';
+}
+function fig(item, opts){
+  opts = opts || {};
+  const meta = '<span class="meta">' + esc(or(item.caption, opts.cap || "Source, place, year")) + '</span>';
+  const note = (item.learned || item.note || opts.note) ? '<span class="note">' + esc(item.learned || item.note || opts.note) + '</span>' : "";
+  return '<figure class="fig"><div class="m">' + media(item.src, opts.ph) + '</div><figcaption>' + meta + note + '</figcaption></figure>';
+}
+function pad(list, n, fill){ const out = (list || []).slice(); while (out.length < n) out.push(Object.assign({}, fill)); return out; }
+const num2 = i => String(i + 1).padStart(2, "0");
+
+/* ---------- section bodies ---------- */
+function body(n, s){
+  if (n === "01"){
+    const subs = or(s.subQuestions, []);
+    return '<div class="grid"><p class="q">' + esc(or(s.question, PH.question)) + '</p>' +
+      (subs.length ? '<ol class="sub">' + subs.map(q => "<li>" + esc(q) + "</li>").join("") + "</ol>" : "") +
+      '<p class="lead">' + esc(or(s.abstract, PH.abstract)) + '</p></div>' +
+      '<div class="cells"><div><h3>Theme and objective</h3><p>' + esc(or(s.theme, PH.theme)) + '</p></div>' +
+      '<div><h3>Relevance of topic</h3><p>' + esc(or(s.relevance, PH.relevance)) + '</p></div>' +
+      '<div><h3>Motivation</h3><p>' + esc(or(s.motivation, PH.motivation)) + '</p></div></div>';
+  }
+  if (n === "02"){
+    const th = s.theoretical || {};
+    const imgs = pad(th.images, 4, { src: "", caption: "Source, place, year" });
+    return '<div class="grid"><div class="txt"><h3>What my research found</h3><p>' + esc(or(th.text, PH.thText)) + '</p></div>' +
+      '<div class="media-grid">' + imgs.map(i => fig(i)).join("") + '</div></div>';
+  }
+  if (n === "03"){
+    const cs = pad(s.cases, 5, { src: "", caption: "Artist, Title, Year", note: "How mine is different, in one line." });
+    return '<div class="cases">' + cs.map(i => fig(i, { cap: "Artist, Title, Year" })).join("") + '</div>';
+  }
+  if (n === "04"){
+    const ex = pad(s.experiments, 3, {}).map(e => Object.assign({ caption: "", learned: "" }, e));
+    const opt = i => ({ cap: "Title", ph: "Video", note: ex[i].learned ? "" : "Explanation" });
+    const big = fig(ex[0], opt(0));
+    const side = ex.slice(1, 3).map((e, i) => fig(e, opt(i + 1))).join("");
+    const more = ex.slice(3).map((e, i) => fig(e, opt(i + 3))).join("");
+    return '<div class="grid"><div class="exp"><div class="big">' + big + '</div><div class="side">' + side + '</div>' +
+      (more ? '<div class="more">' + more + '</div>' : "") + '</div></div>';
+  }
+  if (n === "05"){
+    const p = s.practical || {};
+    return '<div class="cells" style="margin-top:0;border-top:0"><div><h3>What I will make</h3><p>' + esc(or(p.make, PH.make)) + '</p></div>' +
+      '<div><h3>What my experiments showed</h3><p>' + esc(or(p.showed, PH.showed)) + '</p></div>' +
+      '<div><h3>Questions for critics</h3><p>' + esc(or(p.questions, PH.questions)) + '</p></div></div>';
+  }
+  return "";
+}
+
+/* ---------- views ---------- */
+let current = null, openN = null, view = "index";
+
+function render(){
+  const s = current ? bySlug[current] : null;
+  $("barName").textContent = s ? s.name : "All students";
+  document.title = (s ? s.name + " · " : "") + "FMD 404 Capstone Proposals";
+  const stack = $("stack");
+  if (view === "index" || !s){ stack.innerHTML = indexView(); bindIndex(); return; }
+
+  let h = "";
+  if (!openN){
+    h += '<section class="hero">' +
+      '<div class="kw">Keywords:<br>' + or(s.keywords, PH.keywords).map(esc).join("<br>") + '</div>' +
+      '<div class="mark" aria-hidden="true">' + esc(MARK) + '</div>' +
+      '<h1>' + esc(or(s.title, PH.title)) + '</h1></section>';
+  }
+  h += '<div class="rows">';
+  SECTIONS.forEach(sec => {
+    const isOpen = sec.n === openN;
+    h += '<div class="row' + (isOpen ? " open" : "") + '">' +
+      '<button class="rowhead caps" data-n="' + sec.n + '" aria-expanded="' + isOpen + '"><span class="n">' + sec.n + '/</span><span class="l">' + sec.label + '</span>' + glyph(isOpen) + '</button>' +
+      (isOpen ? '<div class="body">' + body(sec.n, s) + '</div>' : "") + '</div>';
+  });
+  stack.innerHTML = h + "</div>";
+  stack.querySelectorAll(".rowhead").forEach(b => b.addEventListener("click", () => toggle(b.dataset.n)));
+}
+function toggle(n){ openN = openN === n ? null : n; render(); }
+
+function indexView(){
+  let h = '<div class="index"><div class="head caps">Student names</div>';
+  STUDENTS.forEach((s, i) => {
+    const title = String(s.title || "").replace(/\n/g, " ");
+    h += '<button class="rowhead caps' + (s.slug === current ? " here" : "") + '" data-s="' + s.slug + '"><span class="n">' + num2(i) + '/</span>' +
+      '<span class="nm">' + esc(s.name) + '</span><span class="tt">' + esc(title) + '</span>' + glyph(false) + '</button>';
+  });
+  return h + "</div>";
+}
+function bindIndex(){ $("stack").querySelectorAll("[data-s]").forEach(b => b.addEventListener("click", () => go(b.dataset.s))); }
+function go(sl){
+  current = sl; openN = null; view = "page";
+  try { if (location.hash.slice(1) !== sl) location.hash = sl; } catch (e) {}
+  render();
+}
+$("who").addEventListener("click", () => {
+  if (view === "index" && current){ view = "page"; } else { view = "index"; openN = null; }
+  render();
+});
+
+/* ---------- keyboard ---------- */
+document.addEventListener("keydown", e => {
+  wake();
+  if (e.metaKey || e.ctrlKey || e.altKey) return;
+  const k = e.key;
+  if (/^[1-5]$/.test(k) && view === "page"){ toggle("0" + k); return; }
+  if (k === "Escape" || k === "0"){ if (current){ view = "page"; openN = null; render(); } return; }
+  if (k === "i" || k === "I"){ $("who").click(); return; }
+  if ((k === "p" || k === "P") && current){ saver(true); return; }
+});
+
+/* ---------- screensaver: the student's own images and videos, muted ---------- */
+let idleT = null, saving = false, slides = [], slideI = 0, slideT = null;
+function collect(s){
+  const out = [];
+  const add = (sec, item, cap) => { if (item && item.src) out.push({ sec, src: item.src, cap }); };
+  (s.experiments || []).forEach(e => add(SECTIONS[3], e, e.caption || ""));
+  ((s.theoretical || {}).images || []).forEach(m => add(SECTIONS[1], m, m.caption || ""));
+  (s.cases || []).forEach(m => add(SECTIONS[2], m, m.caption || ""));
+  return out;
+}
+function wake(){
+  if (saving) saver(false);
+  clearTimeout(idleT);
+  if (current) idleT = setTimeout(() => saver(true), IDLE_SECONDS * 1000);
+}
+function saver(on){
+  const a = $("attract");
+  clearTimeout(slideT);
+  if (!on){ saving = false; a.classList.remove("on"); $("attractStage").innerHTML = ""; return; }
+  const s = bySlug[current]; if (!s) return;
+  saving = true; view = "page"; openN = null; render();
+  slides = collect(s); slideI = 0;
+  $("attractName").textContent = s.name;
+  a.classList.add("on");
+  showSlide(s);
+}
+function showSlide(s){
+  if (!saving) return;
+  const stage = $("attractStage"), prog = $("attractProgress");
+  if (!slides.length){
+    stage.innerHTML = '<div class="card"><h2>' + esc(or(s.title, PH.title)) + '</h2></div>';
+    $("attractN").textContent = ""; $("attractCap").textContent = "Touch the screen to explore";
+    prog.style.transition = "none"; prog.style.width = "0";
+    return;
+  }
+  const sl = slides[slideI % slides.length];
+  stage.innerHTML = media(sl.src, "", true);
+  $("attractN").textContent = sl.sec.n + "/";
+  $("attractCap").textContent = sl.sec.label + (sl.cap ? " · " + sl.cap : "");
+  const v = stage.querySelector("video");
+  let dur = SLIDE_SECONDS;
+  if (v){ v.muted = true; v.loop = false; v.play().catch(() => {}); v.addEventListener("loadedmetadata", () => {}, { once: true }); dur = 20; v.addEventListener("ended", next, { once: true }); }
+  prog.style.transition = "none"; prog.style.width = "0";
+  requestAnimationFrame(() => requestAnimationFrame(() => { prog.style.transition = "width " + dur + "s linear"; prog.style.width = "100%"; }));
+  slideT = setTimeout(next, dur * 1000);
+  function next(){ clearTimeout(slideT); slideI++; showSlide(s); }
+}
+["pointerdown", "wheel", "touchstart"].forEach(ev => document.addEventListener(ev, wake, { passive: true }));
+document.addEventListener("pointermove", () => { if (!saving) wake(); }, { passive: true });
+
+/* ---------- boot ---------- */
+function fromHash(){ const h = decodeURIComponent((location.hash || "").slice(1)).toLowerCase(); return bySlug[h] ? h : null; }
+window.addEventListener("hashchange", () => { const h = fromHash(); if (h && h !== current) go(h); });
+const start = fromHash();
+if (start){ current = start; view = "page"; }
+render();
+wake();
+})();
+</script>
+</body>
+</html>
