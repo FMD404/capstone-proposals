@@ -40,7 +40,10 @@ button:focus-visible{outline:2px solid var(--ink);outline-offset:-4px}
 .bar{display:grid;grid-template-columns:3fr 5fr 2fr 2fr;height:var(--bar);border-bottom:var(--rule);flex:none}
 .bar>*{display:flex;align-items:center;padding:0 var(--pad);border-left:var(--rule);min-width:0;white-space:nowrap;overflow:hidden}
 .bar>*:first-child{border-left:0}
-.bar .who span{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:.35em}
+.bar .who{gap:.7em}
+.bar .who .back{flex:none;width:1.25em;height:1.25em;stroke:var(--ink);fill:none;stroke-width:1.4}
+.bar .who:hover .back{transform:translateX(-2px)}
+.bar .who #barName{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:.35em}
 .bar b{font-weight:700}
 
 /* main stack */
@@ -142,7 +145,7 @@ button:focus-visible{outline:2px solid var(--ink);outline-offset:-4px}
 <body>
 <div class="sheet">
   <header class="bar">
-    <button class="who caps" id="who" aria-label="Show all students"><span id="barName">All students</span></button>
+    <button class="who caps" id="who" aria-label="Back to all students"><svg class="back hide" id="backArrow" viewBox="0 0 20 20" aria-hidden="true"><path d="M18 10H3M9 4l-6 6 6 6"/></svg><span id="barName">All students</span></button>
     <div class="stretch"></div>
     <div class="caps project">Capstone proposal</div>
     <div class="caps"><b>FMD 404</b></div>
@@ -275,6 +278,7 @@ let current = null, openN = null, view = "index";
 function render(){
   const s = current ? bySlug[current] : null;
   $("barName").textContent = s ? s.name : "All students";
+  $("backArrow").classList.toggle("hide", !(s && view === "page"));
   document.title = (s ? s.name + " · " : "") + "FMD 404 Capstone Proposals";
   const stack = $("stack");
   if (view === "index" || !s){ stack.innerHTML = indexView(); bindIndex(); return; }
