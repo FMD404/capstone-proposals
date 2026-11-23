@@ -57,7 +57,57 @@ window.STUDENTS = [
   },
   { name: "Aya Abdulmannan" },
   { name: "Shams Aboulkheir" },
-  { name: "Elhassan Ahmed" },
+  {
+    name: "Elhassan Ahmed",
+    keywords: ["Format", "Medium", "Listening", "Reinvention", "Object"],
+    title: "Side C",
+    subtitle: "Formats designed around what a song means",
+    question: "Can a song’s format become part of the song, and can artists design formats for their own music?",
+    subQuestions: [
+      "What does a song gain or lose when its format is chosen for what it means?",
+      "Which songs could only exist on one material, and why?"
+    ],
+    abstract: "Side C is a project about the format music is released on. Records, CDs and streaming have shaped how long songs are and how people listen, usually without the artist choosing. Instead of fitting a finished song into an existing format, I start from a song and design its format around what the song means. I’m testing this with three existing songs: “Where’d All the Time Go?” on sand, which wears away as it plays; “As It Was” on ice, which melts; and “Rearrange My World” on clay, which keeps changing as it dries. Each record is 3D printed from the song’s sound, moulded in silicone and cast in its material, then compared against control tests and listening sessions. The project asks whether a format can become part of the song itself. Next semester it becomes a listening installation and the first entries of a library other artists can use.",
+    theme: "The format usually comes last: a song is finished, then put on whatever exists. I want the format designed with the song. Some unusual record materials have been tried before, so my aim is not to be first. It is to choose each material because of what the song means, and gather them into a library other artists can use.",
+    relevance: "Platforms are shaping songs right now. Hit-song intros shrank from about 20 seconds to about 5 because listeners can skip in a second. This matters to musicians, who work within limits they didn’t choose, and to listeners. A record that melts or erodes can only be heard a few times, so listening becomes an event again.",
+    motivation: "In my last project, Muffled, I turned my unreleased songs into a VR game. The songs were the same, but people experienced them completely differently. This project started from one image I couldn’t stop thinking about: a record player with a record on it that isn’t made of vinyl.",
+    theoretical: {
+      text: "My framework is Marshall McLuhan’s “The Medium is the Message” (1964): if the medium changes us more than its content, a song’s format is part of what the song says. Mark Katz shows that the three-minute pop song came from how little early records could hold. Soviet “bone music” (1946–1964), banned songs cut onto used hospital X-rays, changed what music meant, but X-rays were used because they were cheap, not chosen. I use “cheap or chosen” as a test for my formats. I surveyed 11 listeners: most matched each song to the same material I chose, and 8 said they would listen differently to a song that could only play five times.",
+      images: [
+        { src: "media/elhassan-ahmed/research-1.jpg", caption: "Léveillé Gauvin, Musicae Scientiae, 2018" },
+        { src: "media/elhassan-ahmed/research-2.jpg", caption: "Bone music records, USSR, 1950s" },
+        { src: "media/elhassan-ahmed/research-3.jpg", caption: "Marshall McLuhan, Understanding Media, New York, 1964" },
+        { src: "media/elhassan-ahmed/research-4.jpg", caption: "Own survey of 11 listeners, Sharjah, 2026" }
+      ]
+    },
+    cases: [
+      { src: "media/elhassan-ahmed/case-1.jpg", caption: "Katie Paterson, Langjökull, Snæfellsjökull, Sólheimajökull, 2007",
+        note: "She chose ice for the sound of glaciers; I choose the material for what an existing song means, and share the method." },
+      { src: "media/elhassan-ahmed/case-2.jpg", caption: "Christian Marclay, Record Without a Cover, 1985",
+        note: "His record collects damage by chance; mine are made to change in a way that matches the song." },
+      { src: "media/elhassan-ahmed/case-3.jpg", caption: "Beck, Song Reader, 2012",
+        note: "Beck shared his songs as sheet music; I share the method of making a format, so artists can use it for their own songs." },
+      { src: "media/elhassan-ahmed/case-4.jpg", caption: "Jack White, Lazaretto Ultra LP, 2014",
+        note: "Lazaretto adds tricks to a standard vinyl; I change what the record is made of." },
+      { src: "media/elhassan-ahmed/case-5.jpg", caption: "Björk, Biophilia, 2011",
+        note: "Biophilia is an app made by a large team for one album; mine are physical objects any artist can make." }
+    ],
+    experiments: [
+      { src: "media/elhassan-ahmed/exp-1.jpg", caption: "Songs turned into record grooves",
+        learned: "I converted each song clip into a 3D model of a record, with the sound carved into a spiral groove. Each song cuts a different pattern, so you can see its sound before it is printed." },
+      { src: "media/elhassan-ahmed/exp-2.jpg", caption: "How much of each song fits",
+        learned: "A 150 mm record only holds about a minute, so the format kept between a fifth and two fifths of each song, and I had to choose which part to keep." },
+      { src: "media/elhassan-ahmed/exp-3.mp4", caption: "A fire hydrant for “Girl on Fire”",
+        learned: "I carved “Girl on Fire” into a fire hydrant, an object made to put fires out, and simulated it playing. Here the object itself answers what the song means." },
+      { src: "media/elhassan-ahmed/exp-4.mp4", caption: "The hydrant up close",
+        learned: "Circling the hydrant shows 103 turns of groove spiralling from top to bottom, all holding one clip of the song." }
+    ],
+    practical: {
+      make: "Three records cast from the same printed grooves: sand for “Where’d All the Time Go?”, ice for “As It Was” and clay for “Rearrange My World”, beside a plain resin print as a control. Each is shown in a listening room and can only be played a few times. Each format becomes a recipe card, the first entries of a library that continues beyond the capstone as an open archive where other artists add their own formats.",
+      showed: "Turning the songs into record files showed that each song carves its own pattern, and that the format edits the song. A 150 mm record only holds about a minute, so only a fifth to two fifths of each song fit, which made me choose which part to keep. Carving “Girl on Fire” into a fire hydrant showed that a format does not have to be a disc: the object itself can carry what the song means.",
+      questions: "Most people matched the songs to my materials, but gave reasons like “the vibe.” Is that enough, or does the meaning need to be felt through the physical record?\nKatie Paterson already played ice records until they melted. Is starting from existing songs, and sharing the method, a strong enough difference?\nShould the formats stay as records, or become objects like the fire hydrant?"
+    }
+  },
   { name: "Haneen Ahmed" },
   { name: "Sundus Al-Hamadi" },
   { name: "Suha Alassar" },
