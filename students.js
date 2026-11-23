@@ -175,7 +175,56 @@ window.STUDENTS = [
       questions: "Most people matched the songs to my materials, but gave reasons like “the vibe.” Is that enough, or does the meaning need to be felt through the physical record?\nKatie Paterson already played ice records until they melted. Is starting from existing songs, and sharing the method, a strong enough difference?\nShould the formats stay as records, or become objects like the fire hydrant?"
     }
   },
-  { name: "Haneen Ahmed" },
+  {
+    name: "Haneen Ahmed",
+    keywords: ["Intergenerational knowledge", "Food heritage", "Domestic labour", "Cultural memory", "Women’s knowledge"],
+    title: "The Things a Recipe\nCannot Tell You",
+    question: "How are Egyptian cooking practices passed down and transformed across generations, reflecting changes in family roles, labour, and tradition?",
+    subQuestions: [
+      "How is the knowledge of preparing Egyptian dishes passed down and transformed across generations, and what does it reveal about food, labour and tradition?"
+    ],
+    abstract: "This project investigates through the preparation of mahshi how cooking knowledge, tradition and domestic work is passed down through generations of Egyptian women. Using a family recipe as a basis, this project considers the relationships between traditional cooking methods, changing financial situations and the time and effort put into the preparation of a traditional dish. Through interviews, recipe documentation within a family, visual research and comparison between generations, this project considers how knowledge is passed down, retained, modified and sometimes substituted. It explores what is retained beyond the written recipes, and how individual stories reflect wider changes in culinary practice and within families. Within the next semester, this research will become a visual output. It will possibly include documentary and animation. Stories, motions, sounds and research will be transformed into an engaging visual piece which explores the topics of food, memory, domestic work and knowledge transfer between generations.",
+    theme: "This research looks at the importance of making mahshi within Egyptian families. The objective is to understand what knowledge, skills and hidden work has gone into this practice and how it links people across generations, and how it may vary depending on time, family traditions and economical factors.",
+    relevance: "Daily cooking has a value within families and cultures, and passes on knowledge between generations. However, as life styles and economic situations change, some of this may be lost or changed. The knowledge of daily cooking is significant within this project to understand how much time and effort goes into creating traditional dishes in order to preserve the knowledge.",
+    motivation: "I chose this topic because mahshi is a familiar part of my family life, and preparing it with my mother made me curious about the knowledge behind the process. I wanted to understand how these skills were passed down from my grandmother to my mother and how they continue to change across generations.",
+    theoretical: {
+      text: "Through the analysis of cookbooks and women’s magazines, the ways in which recipes and cooking knowledge have been recorded and transferred within Egyptian culture can be examined. The research conducted through interviews, documentation of cooking practices and a sample of 21 participants, demonstrates that women within families (particularly mothers) remain very important in the transfer of cooking knowledge. However, it is clear that online resources are also becoming extremely important. In addition, physical and emotional effort required in cooking was found to be significant and the fluctuation in food costs is having an effect on traditional meals.",
+      images: [
+        { src: "media/haneen-ahmed/research-1.jpg", caption: "Usul al-Tabkh, Nazira Nicola and Bahiya Othman, Cairo, Egypt, 1941" },
+        { caption: "Hawaa magazine, Dar al-Hilal, Cairo, Egypt, 1958" },
+        { caption: "Molokheya, directed by Jonas Parienté, Egypt–France, 2015" },
+        { caption: "Food for Thought: Al-Muallaqat, Maha Malluh, Riyadh, Saudi Arabia, 2013" }
+      ]
+    },
+    cases: [
+      { caption: "Martha Rosler, Semiotics of the Kitchen, 1975",
+        note: "Focuses on real family experiences and inherited cooking knowledge." },
+      { caption: "Grandmas Project, Molokheya, 2015",
+        note: "Explores three generations, domestic labour and changing food costs." },
+      { caption: "Maha Malluh, Food for Thought: Al-Muallaqat, 2013",
+        note: "Focuses on cooking processes and knowledge passed through practice." },
+      { caption: "Carrie Mae Weems, Kitchen Table Series, 1990",
+        note: "Focuses on food preparation and intergenerational traditions." },
+      { caption: "Rirkrit Tiravanija, Untitled (Free), 1992",
+        note: "Explores private family traditions rather than public food experiences." }
+    ],
+    expFit: true,
+    experiments: [
+      { src: "media/haneen-ahmed/exp-1.jpg", caption: "Passing Down Knowledge",
+        learned: "Explores how cooking knowledge is transferred between my grandmother, mother and me through observation, practice and shared experiences." },
+      { src: "media/haneen-ahmed/exp-2.jpg", caption: "Division of Labour",
+        learned: "Documents how responsibilities were divided between my mother and me while preparing mahshi, highlighting the different tasks and shared effort involved." },
+      { caption: "Making Mahshi, short documentary film",
+        learned: "Documents the preparation of mahshi with my mother through video footage. It captures the gestures, techniques and interactions that communicate knowledge beyond written recipes." },
+      { caption: "The Price of Tradition",
+        learned: "Compares the cost of preparing mahshi across different time periods using the same ingredients. It explores how changing food prices affect the cost of preserving traditional cooking practices." }
+    ],
+    practical: {
+      make: "A short experimental documentary will be created in the next semester, combining video recordings of cooking processes, personal narratives, archival images, animation and audio to examine the ways in which cooking knowledge, practices and domestic tasks have been transmitted and changed throughout multiple generations. This can be presented as a video installation or projection within the final graduated exhibition.",
+      showed: "This experimentation allowed me to visualise the themes within my project effectively. Including personal stories from the family, cooking clips and representations of ingredients made the research relatable. However, using static visuals and written information to present information was restrictive. I would like to maintain the documentary elements, visual storytelling and animation within my work, but create a stronger cohesion between these elements.",
+      questions: "Does my project successfully connect the personal family story to wider themes of cultural heritage, women’s labour and economic change?\nHow can I balance documentary footage and animation to create a strong visual narrative?\nHow can I communicate the passing of knowledge between generations in a more engaging and visually meaningful way?"
+    }
+  },
   { name: "Sundus Al-Hamadi" },
   { name: "Suha Alassar" },
   {
@@ -551,9 +600,9 @@ window.STUDENTS = [
       ]
     },
     cases: [
-      { caption: "Rory B. Quintos, Dubai, 2005",
+      { src: "media/james-torio/case-1.jpg", caption: "Rory B. Quintos, Dubai, 2005",
         note: "Dubai frames OFW life through romance; Barya stays at street level in Al Rigga, built from my survey of 30 Filipina workers there and in Satwa." },
-      { caption: "Rory B. Quintos, Anak, 2000",
+      { src: "media/james-torio/case-2.jpg", caption: "Rory B. Quintos, Anak, 2000",
         note: "Anak builds to big family confrontations; Barya shows the everyday pressure 20 of 30 women in my survey described, through quiet, repeated actions." },
       { src: "media/james-torio/case-3.jpg", caption: "Sung-A Yoon, Overseas, 2019",
         note: "Overseas shows women before they leave; Barya shows a woman years into the routine of sending money, which 24 of 30 women I surveyed do regularly." },
@@ -575,12 +624,26 @@ window.STUDENTS = [
       { src: "media/james-torio/exp-5.jpg", caption: "Al Rigga at Night: The Crossing",
         learned: "A wide frame of people waiting at the crossing, testing how the crowd and traffic can make one person feel small. It is a test for the film’s last scene, when she walks the street alone after sending her money home." },
       { src: "media/james-torio/exp-6.jpg", caption: "Al Rigga at Night: The Phone Shop",
-        learned: "A bright phone and SIM card shop in a dark street. The phone is how she shows her family the first picture of her life, so I tested how its light can stand apart from the darkness around her." }
+        learned: "A bright phone and SIM card shop in a dark street. The phone is how she shows her family the first picture of her life, so I tested how its light can stand apart from the darkness around her." },
+      { src: "media/james-torio/exp-7.jpg", caption: "Al Rigga Night Market: The Food Stall",
+        learned: "I framed him through the stall counter, using the stall’s own lights, to test how a workplace can box someone in at night." },
+      { src: "media/james-torio/exp-8.jpg", caption: "Al Rigga Night Market: The Phone Case Stall",
+        learned: "Women shopping under a ring light and racks of phone cases. The phone is how she shows her family her life, so I tested how its world looks from the outside." },
+      { src: "media/james-torio/exp-9.jpg", caption: "Al Rigga Night Market: Walking Through the Crowd",
+        learned: "A long lens on one woman walking through the crowd, testing how to keep her clear while the people around her fall out of focus." },
+      { src: "media/james-torio/exp-10.jpg", caption: "Al Rigga Night Market: Pool After Work",
+        learned: "A low, wide frame of a game of pool after work. I tested how to keep the joy of time off, which Sunday Beauty Queen showed me matters as much as the hardship." },
+      { src: "media/james-torio/exp-11.jpg", caption: "Al Rigga Night Market: The Filipino Food Court",
+        learned: "A wide frame of the Filipino food stalls, testing how the neon signs alone can light a busy night scene and show how many Filipinos gather here." },
+      { src: "media/james-torio/exp-12.jpg", caption: "Al Rigga Night Market: The Clothes Stall",
+        learned: "Shoppers at a clothes stall under fluorescent tubes, testing how cheaper shopping fits the routine of living on what is left after sending money home." },
+      { src: "media/james-torio/exp-13.jpg", caption: "Al Rigga Night Market: Serving the Queue",
+        learned: "Shot from behind the counter, with the worker on one side and the customers on the other, to test how one frame can hold both sides of the job." }
     ],
     practical: {
       make: "Next semester I will make Barya, a short fiction film shot on a Sony FX2 with anamorphic lenses. It follows a Filipino woman through her shop, a recreated bedspace, a remittance centre and the streets of Al Rigga at night. Its story will come from my survey and interviews with Filipino workers in Al Rigga and Satwa. I plan to screen it at the Emirates Film Festival and within Dubai’s Filipino film community.",
       showed: "My night footage of Al Rigga showed that the shopfronts give enough light to film the night exterior with practical light alone, and that the crowd at the crossing makes one person feel small. My lighting test showed that a warm window light against a cool, dark room separates the two pictures of her life. The coin and payday tests are still being filmed.",
-      questions: undefined
+      questions: "How can I keep the women in my survey and interviews anonymous and safe, when some of their bedspaces may not be legal?\nI plan to recreate the bedspace instead of filming a real one; is that enough to protect the women whose rooms it is based on?\nWithout dialogue, will the audience read the gap between the smiling video call and the room she actually lives in?"
     }
   }
 ];
