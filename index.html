@@ -48,10 +48,12 @@ button:focus-visible{outline:2px solid var(--ink);outline-offset:-4px}
 
 /* main stack */
 .stack{flex:1;display:flex;flex-direction:column;min-height:0}
-.hero{flex:1;position:relative;min-height:0;display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:var(--gut);padding:var(--pad);grid-template-rows:auto 1fr auto}
+.hero{flex:1;position:relative;min-height:0;display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:var(--gut);padding:var(--pad);grid-template-rows:auto 1fr auto auto}
 .hero .kw{grid-column:1/6;grid-row:1;font-size:var(--t-l);line-height:1.2}
 .hero .mark{grid-column:10/13;grid-row:1;font-size:var(--t-mark);line-height:.82;letter-spacing:-.03em;margin-top:.04em}
-.hero h1{grid-column:1/13;grid-row:3;margin:0;font-weight:400;font-size:var(--t-title);line-height:.9;letter-spacing:-.035em;white-space:pre-line;text-wrap:balance}
+.hero h1{grid-column:1/13;grid-row:3;margin:0;font-weight:400;font-size:var(--t-title);line-height:.9;letter-spacing:-.035em;white-space:pre}
+/* optional smaller line under the title */
+.hero .subtitle{grid-column:1/13;grid-row:4;margin:.45em 0 0;font-weight:400;font-size:var(--t-q);line-height:1.1;letter-spacing:-.015em}
 
 .row{border-top:var(--rule);flex:none}
 .rows>.row:first-child{border-top:0}
@@ -75,6 +77,7 @@ button:focus-visible{outline:2px solid var(--ink);outline-offset:-4px}
 .sub{grid-column:1/8;margin:0 0 1.4em;font-size:var(--t-l);line-height:1.2;padding-left:1.2em}
 .sub li{margin:0 0 .2em}
 .lead{grid-column:1/8;font-size:var(--t-l);line-height:1.3;margin:0 0 1.6em;text-wrap:pretty}
+.lead p{margin:0;text-wrap:pretty}.lead p+p{margin-top:.8em}
 .cells{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:var(--rule);margin-top:var(--pad)}
 .cells>div{padding:var(--pad);border-left:var(--rule)}
 .cells>div:first-child{border-left:0}
@@ -91,11 +94,11 @@ button:focus-visible{outline:2px solid var(--ink);outline-offset:-4px}
 .fig figcaption .meta{display:block}
 .fig figcaption .note{display:block;color:var(--mute);margin-top:.2em}
 .cases{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:var(--gut);padding:0 var(--pad)}
-.exp{grid-column:1/13;display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:var(--gut);row-gap:var(--gut)}
-.exp .big{grid-column:1/8}
-.exp .big .m{width:min(100%, calc((var(--avail) - 4em) * 16 / 9))}
-.exp .side{grid-column:9/13;display:flex;flex-direction:column;gap:var(--gut)}
-.exp .more{grid-column:1/13;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--gut)}
+/* visual experiments: every video the same size, one under the other, caption beside it */
+.exp{grid-column:1/13;display:flex;flex-direction:column;gap:calc(var(--gut) * 1.5)}
+.exp .fig{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:var(--gut);align-items:start}
+.exp .fig .m{grid-column:1/9;width:min(100%, calc((var(--avail) - 4em) * 16 / 9))}
+.exp .fig figcaption{grid-column:9/13;margin-top:0}
 .exp .fig figcaption,.cases .fig figcaption{font-size:var(--t-m)}
 
 /* hidden index */
@@ -105,19 +108,6 @@ button:focus-visible{outline:2px solid var(--ink);outline-offset:-4px}
 .index .rowhead .tt{grid-column:6/11;color:var(--mute);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .index .head{padding:0 var(--pad);height:var(--row);display:flex;align-items:center;border-bottom:var(--rule);color:var(--mute)}
 
-/* screensaver: muted slideshow of the student's own media */
-.attract{position:fixed;inset:0;background:var(--paper);display:none;z-index:10;cursor:none;padding:var(--pad)}
-.attract.on{display:block}
-.attract .frame{height:100%;border:var(--rule);display:flex;flex-direction:column}
-.attract .stage{flex:1;position:relative;min-height:0;background:var(--tone);overflow:hidden}
-.attract .stage>img,.attract .stage>video,.attract .stage>canvas{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
-.attract .stage .card{position:absolute;inset:0;background:var(--paper);display:flex;align-items:flex-end;padding:var(--pad)}
-.attract .stage .card h2{margin:0;font-weight:400;font-size:var(--t-title);line-height:.9;letter-spacing:-.035em;white-space:pre-line}
-.attract .info{flex:none;border-top:var(--rule)}
-.attract .info .rowhead{cursor:none}
-.attract .info .cap{grid-column:2/9;text-transform:none;letter-spacing:0;font-size:var(--t-m);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.attract .info .nm{grid-column:9/13;justify-self:end;white-space:nowrap}
-.attract .progress{height:2px;background:var(--ink);width:0;flex:none}
 
 .hide{display:none !important}
 @media (max-width:760px){
@@ -126,12 +116,16 @@ button:focus-visible{outline:2px solid var(--ink);outline-offset:-4px}
   .bar{grid-template-columns:3fr 2fr}
   .bar .stretch,.bar .project{display:none}
   .hero{min-height:62vh}
+  .hero h1{white-space:pre-line;font-size:clamp(40px,11vw,80px)}
+  .hero .subtitle{font-size:var(--t-l)}
   .hero .kw{grid-column:1/9}
   .hero .mark{grid-column:9/13}
-  .txt,.media-grid,.q,.sub,.lead,.exp .big,.exp .side{grid-column:1/13}
-  .media-grid .m,.exp .big .m{width:100%}
+  .txt,.media-grid,.q,.sub,.lead{grid-column:1/13}
+  .media-grid .m{width:100%}
+  .exp .fig .m,.exp .fig figcaption{grid-column:1/13;width:100%}
+  .exp .fig figcaption{margin-top:.6em}
   .media-grid{margin-top:var(--pad)}
-  .cells,.cases,.exp .more,.media-grid{grid-template-columns:1fr}
+  .cells,.cases,.media-grid{grid-template-columns:1fr}
   .cells>div{border-left:0;border-top:var(--rule)}
   .cells>div:first-child{border-top:0}
   .row.open{flex:none}
@@ -152,19 +146,11 @@ button:focus-visible{outline:2px solid var(--ink);outline-offset:-4px}
   </header>
   <div class="stack" id="stack"></div>
 </div>
-<div class="attract" id="attract" aria-hidden="true">
-  <div class="frame">
-    <div class="stage" id="attractStage"></div>
-    <div class="progress" id="attractProgress"></div>
-    <div class="info"><div class="rowhead caps"><span class="n" id="attractN"></span><span class="cap" id="attractCap"></span><span class="nm" id="attractName"></span></div></div>
-  </div>
-</div>
 
-<script>
-/* When this page runs from a folder on the iMac, students.js (made from the
-   class sheet) is loaded first and replaces the list below. */
-if (location.protocol === "file:") document.write('<script src="students.js"><\/script>');
-</script>
+<!-- students.js (made from the class sheet) holds every student's content.
+     It sits next to this file, on the iMac and on GitHub. If it is missing,
+     the list below is used and every page shows placeholders. -->
+<script src="students.js"></script>
 <script>
 /* ------------------------------------------------------------------
    DATA. One entry per student, in the order of the class list.
@@ -181,8 +167,6 @@ window.STUDENTS = window.STUDENTS || [
 (function () {
 "use strict";
 
-const IDLE_SECONDS = 90;      // screensaver starts after this long without a touch
-const SLIDE_SECONDS = 7;      // each image stays this long; videos play to the end (max 20 s)
 const MARK = "2026";          // large text, top right of the hero
 const SECTIONS = [
   { n: "01", label: "Design question" },
@@ -212,6 +196,8 @@ const bySlug = {}; STUDENTS.forEach(s => { bySlug[s.slug] = s; });
 /* ---------- helpers ---------- */
 const $ = id => document.getElementById(id);
 const esc = s => String(s == null ? "" : s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+/* a line break in the sheet text starts a new paragraph */
+const paras = t => String(t).split(/\n+/).map(x => x.trim()).filter(Boolean).map(x => "<p>" + esc(x) + "</p>").join("");
 const or = (v, d) => (v === undefined || v === null || v === "" || (Array.isArray(v) && !v.length)) ? d : v;
 function glyph(open){
   const bar = '<rect x="1" y="9.2" width="18" height="1.6"/>';
@@ -220,8 +206,10 @@ function glyph(open){
 }
 const isVideo = src => /\.(mp4|webm|mov|m4v)(\?|$)/i.test(src || "");
 function media(src, label, autoplay){
-  if (isVideo(src)) return '<video src="' + esc(src) + '" ' + (autoplay === false ? "" : "autoplay ") + 'muted loop playsinline preload="metadata"></video>';
-  if (src) return '<img src="' + esc(src) + '" alt="">';
+  /* a missing file shows the grey frame again instead of a broken box */
+  const miss = ' onerror="this.outerHTML=\'<span class=&quot;ph&quot;>' + (isVideo(src) ? "Video" : "Image") + ' missing</span>\'"';
+  if (isVideo(src)) return '<video src="' + esc(src) + '" ' + (autoplay === false ? "" : "autoplay ") + 'muted loop playsinline preload="metadata"' + miss + '></video>';
+  if (src) return '<img src="' + esc(src) + '" alt=""' + miss + '>';
   return '<span class="ph">' + esc(label || "16:9 image") + '</span>';
 }
 function fig(item, opts){
@@ -239,7 +227,7 @@ function body(n, s){
     const subs = or(s.subQuestions, []);
     return '<div class="grid"><p class="q">' + esc(or(s.question, PH.question)) + '</p>' +
       (subs.length ? '<ol class="sub">' + subs.map(q => "<li>" + esc(q) + "</li>").join("") + "</ol>" : "") +
-      '<p class="lead">' + esc(or(s.abstract, PH.abstract)) + '</p></div>' +
+      '<div class="lead">' + paras(or(s.abstract, PH.abstract)) + '</div></div>' +
       '<div class="cells"><div><h3>Theme and objective</h3><p>' + esc(or(s.theme, PH.theme)) + '</p></div>' +
       '<div><h3>Relevance of topic</h3><p>' + esc(or(s.relevance, PH.relevance)) + '</p></div>' +
       '<div><h3>Motivation</h3><p>' + esc(or(s.motivation, PH.motivation)) + '</p></div></div>';
@@ -247,7 +235,7 @@ function body(n, s){
   if (n === "02"){
     const th = s.theoretical || {};
     const imgs = pad(th.images, 4, { src: "", caption: "Source, place, year" });
-    return '<div class="grid"><div class="txt"><h3>What my research found</h3><p>' + esc(or(th.text, PH.thText)) + '</p></div>' +
+    return '<div class="grid"><div class="txt"><h3>What my research found</h3>' + paras(or(th.text, PH.thText)) + '</div>' +
       '<div class="media-grid">' + imgs.map(i => fig(i)).join("") + '</div></div>';
   }
   if (n === "03"){
@@ -257,17 +245,13 @@ function body(n, s){
   if (n === "04"){
     const ex = pad(s.experiments, 3, {}).map(e => Object.assign({ caption: "", learned: "" }, e));
     const opt = i => ({ cap: "Title", ph: "Video", note: ex[i].learned ? "" : "Explanation" });
-    const big = fig(ex[0], opt(0));
-    const side = ex.slice(1, 3).map((e, i) => fig(e, opt(i + 1))).join("");
-    const more = ex.slice(3).map((e, i) => fig(e, opt(i + 3))).join("");
-    return '<div class="grid"><div class="exp"><div class="big">' + big + '</div><div class="side">' + side + '</div>' +
-      (more ? '<div class="more">' + more + '</div>' : "") + '</div></div>';
+    return '<div class="grid"><div class="exp">' + ex.map((e, i) => fig(e, opt(i))).join("") + '</div></div>';
   }
   if (n === "05"){
     const p = s.practical || {};
-    return '<div class="cells" style="margin-top:0;border-top:0"><div><h3>What I will make</h3><p>' + esc(or(p.make, PH.make)) + '</p></div>' +
-      '<div><h3>What my experiments showed</h3><p>' + esc(or(p.showed, PH.showed)) + '</p></div>' +
-      '<div><h3>Questions for critics</h3><p>' + esc(or(p.questions, PH.questions)) + '</p></div></div>';
+    return '<div class="cells" style="margin-top:0;border-top:0"><div><h3>What I will make</h3>' + paras(or(p.make, PH.make)) + '</div>' +
+      '<div><h3>What my experiments showed</h3>' + paras(or(p.showed, PH.showed)) + '</div>' +
+      '<div><h3>Questions for critics</h3>' + paras(or(p.questions, PH.questions)) + '</div></div>';
   }
   return "";
 }
@@ -288,7 +272,8 @@ function render(){
     h += '<section class="hero">' +
       '<div class="kw">Keywords:<br>' + or(s.keywords, PH.keywords).map(esc).join("<br>") + '</div>' +
       '<div class="mark" aria-hidden="true">' + esc(MARK) + '</div>' +
-      '<h1>' + esc(or(s.title, PH.title)) + '</h1></section>';
+      '<h1>' + esc(or(s.title, PH.title)) + '</h1>' +
+      (s.subtitle ? '<p class="subtitle">' + esc(s.subtitle) + '</p>' : "") + '</section>';
   }
   h += '<div class="rows">';
   SECTIONS.forEach(sec => {
@@ -298,8 +283,18 @@ function render(){
       (isOpen ? '<div class="body">' + body(sec.n, s) + '</div>' : "") + '</div>';
   });
   stack.innerHTML = h + "</div>";
+  fitTitle();
   stack.querySelectorAll(".rowhead").forEach(b => b.addEventListener("click", () => toggle(b.dataset.n)));
 }
+/* the title keeps the student's two lines; a long line makes the type smaller instead of wrapping */
+function fitTitle(){
+  const t = document.querySelector(".hero h1"); if (!t) return;
+  t.style.fontSize = "";
+  if (window.innerWidth <= 760) return;   /* on a phone the title wraps instead */
+  const over = t.scrollWidth / t.clientWidth;
+  if (over > 1) t.style.fontSize = (parseFloat(getComputedStyle(t).fontSize) / over * 0.98) + "px";
+}
+window.addEventListener("resize", fitTitle);
 function toggle(n){ openN = openN === n ? null : n; render(); }
 
 function indexView(){
@@ -324,64 +319,12 @@ $("who").addEventListener("click", () => {
 
 /* ---------- keyboard ---------- */
 document.addEventListener("keydown", e => {
-  wake();
   if (e.metaKey || e.ctrlKey || e.altKey) return;
   const k = e.key;
   if (/^[1-5]$/.test(k) && view === "page"){ toggle("0" + k); return; }
   if (k === "Escape" || k === "0"){ if (current){ view = "page"; openN = null; render(); } return; }
   if (k === "i" || k === "I"){ $("who").click(); return; }
-  if ((k === "p" || k === "P") && current){ saver(true); return; }
 });
-
-/* ---------- screensaver: the student's own images and videos, muted ---------- */
-let idleT = null, saving = false, slides = [], slideI = 0, slideT = null;
-function collect(s){
-  const out = [];
-  const add = (sec, item, cap) => { if (item && item.src) out.push({ sec, src: item.src, cap }); };
-  (s.experiments || []).forEach(e => add(SECTIONS[3], e, e.caption || ""));
-  ((s.theoretical || {}).images || []).forEach(m => add(SECTIONS[1], m, m.caption || ""));
-  (s.cases || []).forEach(m => add(SECTIONS[2], m, m.caption || ""));
-  return out;
-}
-function wake(){
-  if (saving) saver(false);
-  clearTimeout(idleT);
-  if (current) idleT = setTimeout(() => saver(true), IDLE_SECONDS * 1000);
-}
-function saver(on){
-  const a = $("attract");
-  clearTimeout(slideT);
-  if (!on){ saving = false; a.classList.remove("on"); $("attractStage").innerHTML = ""; return; }
-  const s = bySlug[current]; if (!s) return;
-  saving = true; view = "page"; openN = null; render();
-  slides = collect(s); slideI = 0;
-  $("attractName").textContent = s.name;
-  a.classList.add("on");
-  showSlide(s);
-}
-function showSlide(s){
-  if (!saving) return;
-  const stage = $("attractStage"), prog = $("attractProgress");
-  if (!slides.length){
-    stage.innerHTML = '<div class="card"><h2>' + esc(or(s.title, PH.title)) + '</h2></div>';
-    $("attractN").textContent = ""; $("attractCap").textContent = "Touch the screen to explore";
-    prog.style.transition = "none"; prog.style.width = "0";
-    return;
-  }
-  const sl = slides[slideI % slides.length];
-  stage.innerHTML = media(sl.src, "", true);
-  $("attractN").textContent = sl.sec.n + "/";
-  $("attractCap").textContent = sl.sec.label + (sl.cap ? " · " + sl.cap : "");
-  const v = stage.querySelector("video");
-  let dur = SLIDE_SECONDS;
-  if (v){ v.muted = true; v.loop = false; v.play().catch(() => {}); v.addEventListener("loadedmetadata", () => {}, { once: true }); dur = 20; v.addEventListener("ended", next, { once: true }); }
-  prog.style.transition = "none"; prog.style.width = "0";
-  requestAnimationFrame(() => requestAnimationFrame(() => { prog.style.transition = "width " + dur + "s linear"; prog.style.width = "100%"; }));
-  slideT = setTimeout(next, dur * 1000);
-  function next(){ clearTimeout(slideT); slideI++; showSlide(s); }
-}
-["pointerdown", "wheel", "touchstart"].forEach(ev => document.addEventListener(ev, wake, { passive: true }));
-document.addEventListener("pointermove", () => { if (!saving) wake(); }, { passive: true });
 
 /* ---------- boot ---------- */
 function fromHash(){ const h = decodeURIComponent((location.hash || "").slice(1)).toLowerCase(); return bySlug[h] ? h : null; }
@@ -389,7 +332,6 @@ window.addEventListener("hashchange", () => { const h = fromHash(); if (h && h !
 const start = fromHash();
 if (start){ current = start; view = "page"; }
 render();
-wake();
 })();
 </script>
 </body>
