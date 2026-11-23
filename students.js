@@ -218,9 +218,9 @@ window.STUDENTS = [
         learned: "22 Nov 2026. The same garment drawn five times in Illustrator, with only the decoration changing. It made each decoration type clear and easy to compare, but lost shine." },
       { src: "media/noor-alqasimi/exp-2.jpg", caption: "Lino print on fabric",
         learned: "23 Nov 2026. I carved five neckline decorations into lino and printed each block three times on fabric. Lino printing was too difficult to use for intricate patterns because the fine details were hard to carve and blurred when printed on fabric. As the ink faded, the decoration disappeared before the neckline outline did." },
-      { src: "media/noor-alqasimi/exp-3.mp4", caption: "Coded threshold slider",
+      { src: "media/noor-alqasimi/exp-4.mp4", caption: "Coded threshold slider",
         learned: "22–23 Nov 2026. A slider that adds decoration to one garment step by step and shows how many of the 16 women called it a mukhawar." },
-      { src: "media/noor-alqasimi/exp-4.mp4", caption: "Coded threshold slider, p5.js version",
+      { src: "media/noor-alqasimi/exp-3.mp4", caption: "Coded threshold slider, p5.js version",
         learned: "The second version, in p5.js, draws the decoration in code and names each variation (e.g. TAL-060)." }
     ],
     practical: {
