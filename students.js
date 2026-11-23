@@ -419,7 +419,7 @@ window.STUDENTS = [
     practical: {
       make: "A time-based work, shown in a gallery space, that lets visitors pass through a soft stage without noticing it. Its final form is still open: an installation, a moving-image piece, or objects that change during the show. What stays fixed are the rules: real crab timings and materials, change too slow to see, and text that never names a feeling, only what a body does.",
       showed: "What worked: I tested shell pieces in different acids (vinegar, citric acid, vitamin C). In vinegar, the shell became soft, bendable and translucent, the closest to a soft stage without a live moult. What failed: the changes happened between my checks, so I missed them, and the shell lost its blue-green colour, turning a translucent orange. What I keep: the softened shell, backlit as a skin, and the finding that change is only noticed afterwards.",
-      questions: "Does the work still read as being about crabs if I never show a whole crab?\nLive crab, or traces and footage only? Which is more honest to the crab?\nHow do I keep “soft” away from soft-shell crab as food?"
+      questions: "Does the work still read as being about crabs if I never show a whole crab?\nShould the viewer go through the change themselves, or watch something else go through it?\nHow do I keep it personal while letting the crab stay a crab?"
     }
   },
   {
