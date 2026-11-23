@@ -100,6 +100,8 @@ button:focus-visible{outline:2px solid var(--ink);outline-offset:-4px}
 .exp .fig .m{grid-column:1/9;width:min(100%, calc((var(--avail) - 4em) * 16 / 9))}
 .exp .fig figcaption{grid-column:9/13;margin-top:0}
 .exp .fig figcaption,.cases .fig figcaption{font-size:var(--t-m)}
+.exp.fit .fig .m{background:#000}
+.exp.fit .fig .m>img,.exp.fit .fig .m>video{object-fit:contain}
 .exp-note{grid-column:1/9;margin-top:calc(var(--gut) * 1.5);padding-top:var(--pad);border-top:var(--rule);font-size:var(--t-m)}
 .exp-note p{margin:0 0 .8em;max-width:46em;text-wrap:pretty}
 
@@ -250,7 +252,8 @@ function body(n, s){
     const opt = i => ({ cap: "Title", ph: "Video", note: ex[i].learned ? "" : "Explanation" });
     /* experimentsNote: optional closing text under the experiments, e.g. a planned test */
     const note = s.experimentsNote ? '<div class="exp-note">' + paras(s.experimentsNote) + '</div>' : "";
-    return '<div class="grid"><div class="exp">' + ex.map((e, i) => fig(e, opt(i))).join("") + '</div>' + note + '</div>';
+    /* expFit: show every experiment whole, letterboxed on black, instead of cropped to fill */
+    return '<div class="grid"><div class="exp' + (s.expFit ? ' fit' : '') + '">' + ex.map((e, i) => fig(e, opt(i))).join("") + '</div>' + note + '</div>';
   }
   if (n === "05"){
     const p = s.practical || {};

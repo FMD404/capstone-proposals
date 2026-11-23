@@ -4,7 +4,8 @@
    A field left out shows its placeholder on the page.
    title: one or two lines (\n starts the second). subtitle: optional, smaller, under the title.
    theoretical.images: four or more; each extra pair adds a row.
-   experimentsNote: optional text shown under the experiments. */
+   experimentsNote: optional text shown under the experiments.
+   expFit: true shows experiment images and videos whole on black instead of cropped. */
 window.STUDENTS = [
   {
     name: "Dima Abdelhadi",
@@ -177,7 +178,57 @@ window.STUDENTS = [
   { name: "Haneen Ahmed" },
   { name: "Sundus Al-Hamadi" },
   { name: "Suha Alassar" },
-  { name: "Noor Alqasimi" },
+  {
+    name: "Noor Alqasimi",
+    keywords: ["Mukhawar", "Jalabiya", "Decoration", "Material culture", "Categorization"],
+    title: "Mukhawar\nor Jalabiya?",
+    question: "How much decoration does a jalabiya need before Emirati women call it a mukhawar?",
+    subQuestions: [
+      "Does the amount of decoration matter more than its type: embroidery, Talli or crystals?",
+      "Do women fall into a few shared groups about where the line is, and does age or family explain which group they are in?"
+    ],
+    abstract: "Emirati women use the word mukhawar every day, but they do not agree on what it means. In a naming study, 16 Emirati women were shown the same garment with different decoration. All 16 called the plain garment a jalabiya, and 15 called the one with crystals and studs a mukhawar. In between, they split almost in half: some said any design is enough, while others needed shine or “a lot of work.” This project asks how much decoration a jalabiya needs before women call it a mukhawar, and whether amount matters more than type. The archive names khwar by technique, while the women judged it by amount and shine. Experiments test decoration through Illustrator iterations, a lino print on fabric, and a coded threshold slider. The final work will let visitors add projected decoration to a real jalabiya and see where Emirati women drew the line.",
+    theme: "I expect that women decide by how much decoration a jalabiya has, not what kind, and that they fall into a few groups about how much is enough. Every woman I asked agreed a plain garment is a jalabiya; above that, the line moves. This project maps that line and turns it into an interactive work.",
+    relevance: "Archives define khwar by technique: the Zay Initiative lists it as machine embroidery in gold or silver thread. The women I asked judged it by amount and shine instead. This everyday knowledge is used constantly but never recorded. It matters to Emirati women, and to designers and brands who label garments “mukhawar” as if its meaning were shared.",
+    motivation: "The mukhawar is part of everyday life at home for me. When I asked the women around me what makes a garment a mukhawar, I expected one answer and heard several. My mother says it is a technique; my friends say the shinier it is, the more it is a mukhawar.",
+    theoretical: {
+      text: "I showed 16 Emirati women aged 19 to over 40 images of the same garment with different decoration. All 16 called the plain garment a jalabiya, and 15 called crystals with studs a mukhawar. In between they split: embroidery only (6 of 16), Talli only (8), crystals only (9). No single decoration type decides the name. They fell into three groups: any design is enough, it must shine, or it must be a specific technique. Even women of the same age disagreed. The Zay Initiative archive names khwar by technique and records crystals separately, even on its most decorated garments. The archive defines the word by how it is made; the women define it by how much there is.",
+      images: [
+        { src: "media/noor-alqasimi/research-1.jpg", caption: "Naming study results, Noor Al Qasimi, UAE, 2026" },
+        { src: "media/noor-alqasimi/research-2.jpg", caption: "Kandurah arabiyah khwar zari, The Zay Initiative, Hatta, 1989" },
+        { src: "media/noor-alqasimi/research-3.jpg", caption: "Thawb mnaghad talli khwar tulah, The Zay Initiative, Al Ain, 1968" },
+        { src: "media/noor-alqasimi/research-4.jpg", caption: "Thawb kandurah khwar zari, The Zay Initiative, UAE, c. 2011" }
+      ]
+    },
+    cases: [
+      { src: "media/noor-alqasimi/case-1.jpg", caption: "Farah Al Qasimi, M Napping on Carpet, 2016",
+        note: "She lets decoration blur the garment into the home; I test where women draw its line." },
+      { src: "media/noor-alqasimi/case-2.jpg", caption: "Haya Ali AlThani, The Dress I Knew First, 2026",
+        note: "She traces a garment through history; I study how women name it now." },
+      { src: "media/noor-alqasimi/case-3.jpg", caption: "GASAH Studio × The Zay Initiative, Inaya Mukhawara Dress, n.d.",
+        note: "They carry a mukhawara’s decoration into new material; I test how much decoration makes a mukhawara." },
+      { src: "media/noor-alqasimi/case-4.jpg", caption: "William Labov, The Boundaries of Words and Their Meanings, 1973",
+        note: "He found where people switch names for cups; I find where women switch names for garments." },
+      { src: "media/noor-alqasimi/case-5.jpg", caption: "Douglas Hofstadter and Gary McGraw, Letter Spirit, 1995",
+        note: "They model one shared category; I show women draw its edge in different places." }
+    ],
+    expFit: true,
+    experiments: [
+      { src: "media/noor-alqasimi/exp-1.jpg", caption: "Geometric iterations",
+        learned: "22 Nov 2026. The same garment drawn five times in Illustrator, with only the decoration changing. It made each decoration type clear and easy to compare, but lost shine." },
+      { src: "media/noor-alqasimi/exp-2.jpg", caption: "Lino print on fabric",
+        learned: "23 Nov 2026. I carved five neckline decorations into lino and printed each block three times on fabric. Lino printing was too difficult to use for intricate patterns because the fine details were hard to carve and blurred when printed on fabric. As the ink faded, the decoration disappeared before the neckline outline did." },
+      { src: "media/noor-alqasimi/exp-3.mp4", caption: "Coded threshold slider",
+        learned: "22–23 Nov 2026. A slider that adds decoration to one garment step by step and shows how many of the 16 women called it a mukhawar." },
+      { src: "media/noor-alqasimi/exp-4.mp4", caption: "Coded threshold slider, p5.js version",
+        learned: "The second version, in p5.js, draws the decoration in code and names each variation (e.g. TAL-060)." }
+    ],
+    practical: {
+      make: "A plain white jalabiya on a dress form sits at the centre of a dark room, with decoration projection-mapped onto it. As visitors add decoration with a slider, sixteen points of light on the surrounding walls each switch from “jalabiya” to “mukhawar” as each woman changes her answer, while their voices play around the room. Visitors can see and hear the group split. Next semester I will test the threshold by amount, using real garments.",
+      showed: "Vector made each decoration type clear to compare but flat: crystals became dots and lost shine. Lino failed: fine decoration was hard to carve and blurred on fabric, and as the ink faded the details disappeared first. Code worked best: the slider and p5.js sketch show decoration step by step beside how many women called it a mukhawar. I keep code, and projection to bring back shine.",
+      questions: "Which style best shows where a jalabiya becomes a mukhawar?\nAt the same area, do crystals look like more work than Talli, so that shine is how we see amount?\nMy participants are mostly aged 19 to 25. How much does that limit what I can claim?"
+    }
+  },
   {
     name: "Hala El Khatib",
     keywords: ["Moulting", "Soft stage", "Liminality", "Affect", "Vulnerability"],
@@ -455,6 +506,7 @@ window.STUDENTS = [
       { src: "media/maya-tabsh/case-5.jpg", caption: "Jane and Louise Wilson, A Free and Anonymous Monument, 2003",
         note: "I am interested in how the Wilsons explore different perspectives of the same physical environments. While their work focuses on how places can be experienced and interpreted differently, my project investigates how a shared childhood environment can shape different memories, emotions, and identities." }
     ],
+    expFit: true,
     experiments: [
       { src: "media/maya-tabsh/exp-1.jpg", caption: "Childhood House Layout",
         learned: "My twin and I independently drew the layout of our childhood home from memory and attached memories to each room. I then printed both drawings on tracing paper, layered them, and scanned the result to reveal where our recollections aligned and differed. The experiment explores how people can remember the same physical space differently, showing that memory is subjective and reconstructed rather than an exact record of the past." },
@@ -469,5 +521,66 @@ window.STUDENTS = [
       questions: "How can I balance abstraction and storytelling so the audience can connect with the project without knowing the personal memories behind it?\nHow can I create an experience that encourages viewers to reflect on their own memories and relationships rather than simply observing mine?"
     }
   },
-  { name: "James Torio" }
+  {
+    name: "James Torio",
+    keywords: ["Women OFWs", "Remittance", "Bedspace", "Bagong bayani", "Al Rigga"],
+    title: "Barya",
+    subtitle: "What She Sends, What She Keeps",
+    question: "How can I use cinematography to show the gap between the life a Filipino woman working in the UAE shows her family and the life she actually lives?",
+    subQuestions: [
+      "Is the hidden cost the money she does not keep, or the truth she does not tell her family?",
+      "What does her family see of her life, and can that sit in the same frame as her room?"
+    ],
+    abstract: "Barya is a short film about a Filipino woman who works in a small grocery shop in Al Rigga, Dubai, rents a bedspace, and sends most of her salary home. Barya is the Filipino word for coins, or small change: the little she has left after rent, food, transport and what she sends. An anonymous survey of 30 Filipina workers in Al Rigga and Satwa found that 24 regularly send money home and 20 said their monthly expenses limit their personal spending, while only 12 had faced an emergency request for money. This supports my hypothesis that the hidden cost of working abroad is not one dramatic moment but a monthly rule: send first, live on what is left. Built from this survey and the interviews that follow, the film puts two pictures of one life in the same frame: what she sends home, and what she keeps.",
+    theme: "Barya follows a Filipino woman working in a Dubai grocery shop who sends most of her salary home. The film sets out to show that the hidden cost of working abroad is a monthly routine, send first and live on what is left, by putting the life she shows her family and the life she lives in the same frame.",
+    relevance: "The film is made for Filipinos living and working in the UAE, so they can recognise their own routine and see that the money they keep quiet about is a shared experience, not a personal failure. Since June 2025, partition rooms in Al Rigga and Satwa have been cleared, so where she can safely sleep is a real question.",
+    motivation: "As a Filipino living and studying in the UAE, I see Filipino women working in shops, cafes and malls every day, while people back home picture life here as comfortable. As a cinematographer, I want to tell their story through images rather than dialogue, based on what they tell me.",
+    theoretical: {
+      text: "An anonymous survey of 30 Filipina workers in Al Rigga and Satwa supports my hypothesis. 24 of 30 regularly send money to the Philippines, and 20 said monthly expenses limit their personal spending. 18 pay for shared accommodation, 15 feel responsible for supporting parents or siblings, and 12 have faced unexpected requests for financial help. 21 cited better income opportunities. This matches national data: women are 55.6 percent of the 2.16 million OFWs (PSA, 2023), and the UAE is their second most common destination. Since June 2025, Dubai Municipality has been clearing partition rooms in areas including Al Rigga and Satwa, so their housing is becoming less secure.",
+      images: [
+        { src: "media/james-torio/research-1.jpg", caption: "The National, Al Rigga, 2026" },
+        { src: "media/james-torio/research-2.jpg", caption: "Khaleej Times, Dubai, 2025" },
+        { src: "media/james-torio/research-3.jpg", caption: "The National, Dubai, 2026" },
+        { src: "media/james-torio/research-4.jpg", caption: "Khaleej Times, Al Rigga Road, 2019" },
+        { src: "media/james-torio/research-5.jpg", caption: "Survey: Reasons for Working in the UAE", note: "An anonymous survey of 30 Filipina workers in Al Rigga and Satwa. 21 of 30 cited better income opportunities as their reason for working in the UAE." },
+        { src: "media/james-torio/research-6.jpg", caption: "Survey: Supporting Family Back Home", note: "24 of 30 regularly send money to the Philippines, making remittance part of almost every respondent’s month." },
+        { src: "media/james-torio/research-7.jpg", caption: "Survey: Accommodation", note: "18 of 30 pay for shared accommodation, so rent sits on top of what they send home." },
+        { src: "media/james-torio/research-8.jpg", caption: "Survey: Financial Pressure", note: "20 of 30 said their monthly expenses limit their personal spending, supporting the idea of sending first and living on what is left." },
+        { src: "media/james-torio/research-9.jpg", caption: "Survey: Family Expectations", note: "15 of 30 felt responsible for supporting their parents or siblings." },
+        { src: "media/james-torio/research-10.jpg", caption: "Survey: Emergency Expenses", note: "12 of 30 had experienced unexpected requests for financial help, fewer than those who described everyday pressure." }
+      ]
+    },
+    cases: [
+      { caption: "Rory B. Quintos, Dubai, 2005",
+        note: "Dubai frames OFW life through romance; Barya stays at street level in Al Rigga, built from my survey of 30 Filipina workers there and in Satwa." },
+      { caption: "Rory B. Quintos, Anak, 2000",
+        note: "Anak builds to big family confrontations; Barya shows the everyday pressure 20 of 30 women in my survey described, through quiet, repeated actions." },
+      { src: "media/james-torio/case-3.jpg", caption: "Sung-A Yoon, Overseas, 2019",
+        note: "Overseas shows women before they leave; Barya shows a woman years into the routine of sending money, which 24 of 30 women I surveyed do regularly." },
+      { src: "media/james-torio/case-4.jpg", caption: "Baby Ruth Villarama, Sunday Beauty Queen, 2016",
+        note: "Like Sunday Beauty Queen, Barya keeps the joy, but sets it against the expenses that limit personal spending for 20 of 30 women I surveyed." },
+      { src: "media/james-torio/case-5.jpg", caption: "Xyza Cruz Bacani, We Are Like Air, 2018",
+        note: "Barya brings the same intimacy into colour, putting the life she sends home and the life she keeps in one frame." }
+    ],
+    expFit: true,
+    experiments: [
+      { src: "media/james-torio/exp-1.jpg", caption: "The Coin as Barya",
+        learned: "Dirham coins stand for the barya, the small change left after rent, food, transport and money sent home. I film a pile shrinking to a few coins because 20 of 30 women in my survey said their monthly expenses limit their personal spending." },
+      { src: "media/james-torio/exp-2.jpg", caption: "Payday in Al Rigga vs Normal Days",
+        learned: "I film the same Al Rigga street and remittance centres on payday and on an ordinary day. The ordinary night is shot; since 24 of 30 women I surveyed regularly send money home, the payday footage will show how that monthly routine changes the street." },
+      { src: "media/james-torio/exp-3.jpg", caption: "The Bedspace Frame: Lighting Test",
+        learned: "My first lighting test for her room: one warm window light against a cool, dark space, with the warmth standing for home and family. 18 of 30 women I surveyed pay for shared accommodation, so the room has to feel small and far from home." },
+      { src: "media/james-torio/exp-4.jpg", caption: "Al Rigga at Night: Shopfronts",
+        learned: "I tested whether the shopfront lights of Al Rigga can light the night scenes on their own. These shops, money exchanges and food counters are where the women I surveyed spend and send their pay after work." },
+      { src: "media/james-torio/exp-5.jpg", caption: "Al Rigga at Night: The Crossing",
+        learned: "A wide frame of people waiting at the crossing, testing how the crowd and traffic can make one person feel small. It is a test for the film’s last scene, when she walks the street alone after sending her money home." },
+      { src: "media/james-torio/exp-6.jpg", caption: "Al Rigga at Night: The Phone Shop",
+        learned: "A bright phone and SIM card shop in a dark street. The phone is how she shows her family the first picture of her life, so I tested how its light can stand apart from the darkness around her." }
+    ],
+    practical: {
+      make: "Next semester I will make Barya, a short fiction film shot on a Sony FX2 with anamorphic lenses. It follows a Filipino woman through her shop, a recreated bedspace, a remittance centre and the streets of Al Rigga at night. Its story will come from my survey and interviews with Filipino workers in Al Rigga and Satwa. I plan to screen it at the Emirates Film Festival and within Dubai’s Filipino film community.",
+      showed: "My night footage of Al Rigga showed that the shopfronts give enough light to film the night exterior with practical light alone, and that the crowd at the crossing makes one person feel small. My lighting test showed that a warm window light against a cool, dark room separates the two pictures of her life. The coin and payday tests are still being filmed.",
+      questions: undefined
+    }
+  }
 ];
