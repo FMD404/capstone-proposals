@@ -100,6 +100,8 @@ button:focus-visible{outline:2px solid var(--ink);outline-offset:-4px}
 .exp .fig .m{grid-column:1/9;width:min(100%, calc((var(--avail) - 4em) * 16 / 9))}
 .exp .fig figcaption{grid-column:9/13;margin-top:0}
 .exp .fig figcaption,.cases .fig figcaption{font-size:var(--t-m)}
+.exp-note{grid-column:1/9;margin-top:calc(var(--gut) * 1.5);padding-top:var(--pad);border-top:var(--rule);font-size:var(--t-m)}
+.exp-note p{margin:0 0 .8em;max-width:46em;text-wrap:pretty}
 
 /* hidden index */
 .index{flex:1;overflow-y:auto;min-height:0}
@@ -123,6 +125,7 @@ button:focus-visible{outline:2px solid var(--ink);outline-offset:-4px}
   .txt,.media-grid,.q,.sub,.lead{grid-column:1/13}
   .media-grid .m{width:100%}
   .exp .fig .m,.exp .fig figcaption{grid-column:1/13;width:100%}
+  .exp-note{grid-column:1/13}
   .exp .fig figcaption{margin-top:.6em}
   .media-grid{margin-top:var(--pad)}
   .cells,.cases,.media-grid{grid-template-columns:1fr}
@@ -245,7 +248,9 @@ function body(n, s){
   if (n === "04"){
     const ex = pad(s.experiments, 3, {}).map(e => Object.assign({ caption: "", learned: "" }, e));
     const opt = i => ({ cap: "Title", ph: "Video", note: ex[i].learned ? "" : "Explanation" });
-    return '<div class="grid"><div class="exp">' + ex.map((e, i) => fig(e, opt(i))).join("") + '</div></div>';
+    /* experimentsNote: optional closing text under the experiments, e.g. a planned test */
+    const note = s.experimentsNote ? '<div class="exp-note">' + paras(s.experimentsNote) + '</div>' : "";
+    return '<div class="grid"><div class="exp">' + ex.map((e, i) => fig(e, opt(i))).join("") + '</div>' + note + '</div>';
   }
   if (n === "05"){
     const p = s.practical || {};
