@@ -64,7 +64,52 @@ window.STUDENTS = [
   { name: "Noor Alqasimi" },
   { name: "Hala El Khatib" },
   { name: "Joud Elayan" },
-  { name: "Shahad Muallemi" },
+  {
+    name: "Shahad Muallemi",
+    keywords: ["Time perception", "Task-switching", "Interruptions", "Attention", "Time pressure"],
+    title: "Time\nUnnoticed",
+    question: "How does switching between tasks affect people’s perception and experience of time throughout the day?",
+    abstract: "This project explores how switching between tasks affects people’s perception and experience of time throughout the day. It asks why time can feel limited, even when the actual amount of time available remains constant, and how interruptions, divided attention, and competing responsibilities contribute to this feeling. Through theoretical research and primary experiments, the project investigates the relationship between task-switching, engagement, and the experience of time. The findings suggest that switching between tasks and frequent interruptions divide our attention, fragmenting our time and making it pass unnoticed. Building on these findings, the project will develop into an animation next semester, exploring how everyday activities, distractions, and unfinished tasks shape our experience of time and create a sense of time pressure. It will investigate how these experiences can be communicated visually through movement and fragmented sequences, connecting time perception with the familiar feeling of having too much to do.",
+    theme: "This project explores how switching between tasks affects people’s perception of time and contributes to the feeling that there is never enough time in a day. The key idea is that time remains constant, but how we experience it changes. It investigates how interruptions, divided attention, and responsibilities affect our experience of time, examining the difference between actual time passed and our perception of it.",
+    relevance: "The project is relevant because it explores a familiar experience. People experience time differently depending on their surroundings and activities. This feeling is common among AUS students who are balancing multiple courses, assignments, and deadlines. Interruption and competing priorities can make people feel rushed, even when the actual amount of time available in a day has not changed.",
+    motivation: "The project is motivated by the familiar feeling that there is never enough time in a day, especially when several tasks need to be completed at once. Even when time is available, switching between responsibilities and thinking about everything that remains unfinished can create a sense of urgency.",
+    theoretical: {
+      text: "Time is constant, but our perception is shaped by experience. Research suggests boredom makes time feel slower, while engaging activities make it seem faster as attention shifts away from time. Notifications and interruptions divide attention. Time confetti describes how these disruptions fragment time, taking up time that could be spent elsewhere.\nMy experiments explored how attention and task-switching influence time perception. Participants estimated longer periods during repetitive tasks than when switching between tasks. In another experiment, participants overestimated one minute while scrolling or solving a puzzle compared to silence, suggesting that the more engaged someone is, the faster time feels. Additionally, most underestimated their phone usage. Overall, the findings suggest that attention, engagement, and interruptions influence how we experience and estimate time.",
+      images: [
+        { src: "media/shahad-muallemi/research-1.jpg", caption: "Time Confetti, Ashley Whillans, 2020" },
+        { src: "media/shahad-muallemi/research-2.jpg", caption: "Primary research, task switching, 2026" },
+        { src: "media/shahad-muallemi/research-3.jpg", caption: "Primary research, one minute test, 2026" },
+        { src: "media/shahad-muallemi/research-4.jpg", caption: "Primary research, screen time, 2026" }
+      ]
+    },
+    cases: [
+      { src: "media/shahad-muallemi/case-1.jpg", caption: "Nata Metlukh, Off-Time, 2025",
+        note: "Unlike Off-Time’s portrayal of multitasking chaos through time effects, my project explores how divided attention and task switching influence time perception." },
+      { src: "media/shahad-muallemi/case-2.jpg", caption: "Claude Cloutier, Overdose, NFB, 1994",
+        note: "Unlike Overdose’s portrayal of pressure through repetitive daily routines, my project explores how task-switching and distractions fragment time." },
+      { src: "media/shahad-muallemi/case-3.jpg", caption: "Bellecour School, Destiny, 2012",
+        note: "Unlike Destiny’s use of repetition and time loops, my project explores how interruptions influence the experience of time." },
+      { src: "media/shahad-muallemi/case-4.jpg", caption: "Van Moudov, Performing Time, 2012",
+        note: "While Moudov explores the experience of time through performance, my project examines how attention and interruptions shape it." },
+      { src: "media/shahad-muallemi/case-5.jpg", caption: "Iangyu Fu, A While, 2023",
+        note: "Unlike A While’s use of abstract visuals to explore time perception, my project explores it through everyday activities and interruptions." }
+    ],
+    experiments: [
+      { src: "media/shahad-muallemi/exp-1.mp4", caption: "Projection Mapping: Divided Time",
+        learned: "A projection mapping experiment across three rooms follows a person repeatedly interrupted while working. As she switches between activities, the day passes, and her work remains unfinished, illustrating how task-switching fragments our day and makes time pass unnoticed." },
+      { src: "media/shahad-muallemi/exp-2.mp4", caption: "Clock Experiment",
+        learned: "An experiment comparing three clocks with different numbers of moving elements explored their effect on time perception. Most participants perceived the clock with the least movement as slowest and the one with the most movement as fastest, suggesting that having more to focus on can make time feel faster." },
+      { src: "media/shahad-muallemi/exp-3.mp4", caption: "Stop Motion: Fragmented Time",
+        learned: "A stop-motion animation shows a person’s thoughts gradually filling the paper, representing daily activities and responsibilities. As the paper fills, it is ripped into pieces, creating gaps that symbolize how interruptions and competing tasks fragment our day and our experience of time." },
+      { src: "media/shahad-muallemi/exp-4.mp4", caption: "Moving Dots",
+        learned: "An abstract animation comparing a single moving dot with multiple moving dots across the screen. The experiment explores whether the number of moving elements influences how viewers perceive the passage of time." }
+    ],
+    practical: {
+      make: "Next semester, I hope to develop an animation exploring how people experience time when balancing multiple responsibilities. Through everyday activities, interruptions, and transitions between tasks, the animation will communicate how attention becomes divided and how time can pass unnoticed. It could be presented as a digital animation or through projection mapping.",
+      showed: "The clock experiment showed that the more we have to focus on, the faster time can feel. The projection mapping shifted viewers’ attention between rooms, reflecting the project’s core idea. The stop-motion animation communicated the overall concept, while the idea of thoughts breaking into pieces could be further explored.",
+      questions: "What visual direction and animation technique would be most effective for developing this project (digital animation, stop-motion, or projection mapping)?\nBased on the experiments so far, what worked well, what could be improved, and what aspects should I explore further to strengthen the final outcome?"
+    }
+  },
   {
     name: "Shrinidhi Mukund",
     keywords: ["Sensory perception", "Cravings", "Repetition", "Satisfaction", "Habit"],
