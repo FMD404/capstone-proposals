@@ -210,13 +210,13 @@ window.STUDENTS = [
     ],
     expFit: true,
     experiments: [
-      { src: "media/haneen-ahmed/exp-1.jpg", caption: "Passing Down Knowledge",
+      { src: "media/haneen-ahmed/exp-1.jpg", caption: "Passing Down Cooking Knowledge",
         learned: "Explores how cooking knowledge is transferred between my grandmother, mother and me through observation, practice and shared experiences." },
       { src: "media/haneen-ahmed/exp-2.jpg", caption: "Division of Labour",
         learned: "Documents how responsibilities were divided between my mother and me while preparing mahshi, highlighting the different tasks and shared effort involved." },
       { caption: "Making Mahshi, short documentary film",
         learned: "Documents the preparation of mahshi with my mother through video footage. It captures the gestures, techniques and interactions that communicate knowledge beyond written recipes." },
-      { caption: "The Price of Tradition",
+      { caption: "The Cost of Making Mahshi",
         learned: "Compares the cost of preparing mahshi across different time periods using the same ingredients. It explores how changing food prices affect the cost of preserving traditional cooking practices." }
     ],
     practical: {
