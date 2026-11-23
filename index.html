@@ -6,8 +6,6 @@
 <title>FMD 404 Capstone Proposals</title>
 <style>
 :root{
-  /* One visual world, shared with the draped poster: white sheet, black rules, one grotesk. */
-  /* Layout: framed sheet. Header bar, hero, then numbered rows 01-05 that open in place. */
   --paper:#ffffff;
   --ink:#000000;
   --mute:#6f6f6f;
@@ -36,7 +34,6 @@ button:focus-visible{outline:2px solid var(--ink);outline-offset:-4px}
 .caps{text-transform:uppercase;letter-spacing:.04em;font-size:var(--t-s)}
 .grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:var(--gut);padding:0 var(--pad)}
 
-/* header bar */
 .bar{display:grid;grid-template-columns:3fr 5fr 2fr 2fr;height:var(--bar);border-bottom:var(--rule);flex:none}
 .bar>*{display:flex;align-items:center;padding:0 var(--pad);border-left:var(--rule);min-width:0;white-space:nowrap;overflow:hidden}
 .bar>*:first-child{border-left:0}
@@ -46,13 +43,11 @@ button:focus-visible{outline:2px solid var(--ink);outline-offset:-4px}
 .bar .who #barName{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:.35em}
 .bar b{font-weight:700}
 
-/* main stack */
 .stack{flex:1;display:flex;flex-direction:column;min-height:0}
 .hero{flex:1;position:relative;min-height:0;display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:var(--gut);padding:var(--pad);grid-template-rows:auto 1fr auto auto}
 .hero .kw{grid-column:1/6;grid-row:1;font-size:var(--t-l);line-height:1.2}
 .hero .mark{grid-column:10/13;grid-row:1;font-size:var(--t-mark);line-height:.82;letter-spacing:-.03em;margin-top:.04em}
 .hero h1{grid-column:1/13;grid-row:3;margin:0;font-weight:400;font-size:var(--t-title);line-height:1;letter-spacing:-.035em;white-space:pre}
-/* optional smaller line under the title */
 .hero .subtitle{grid-column:1/13;grid-row:4;margin:.45em 0 0;font-weight:400;font-size:var(--t-q);line-height:1.1;letter-spacing:-.015em}
 
 .row{border-top:var(--rule);flex:none}
@@ -72,7 +67,6 @@ button:focus-visible{outline:2px solid var(--ink);outline-offset:-4px}
 .body>.cells:last-child{flex:1 0 auto;border-bottom:0}
 .body::-webkit-scrollbar{width:0}
 
-/* content blocks */
 .q{grid-column:1/11;font-size:var(--t-q);line-height:1.08;letter-spacing:-.015em;margin:0 0 .5em;text-wrap:balance}
 .sub{grid-column:1/8;margin:0 0 1.4em;font-size:var(--t-l);line-height:1.2;padding-left:1.2em}
 .sub li{margin:0 0 .2em}
@@ -94,7 +88,6 @@ button:focus-visible{outline:2px solid var(--ink);outline-offset:-4px}
 .fig figcaption .meta{display:block}
 .fig figcaption .note{display:block;color:var(--mute);margin-top:.2em}
 .cases{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:var(--gut);padding:0 var(--pad)}
-/* visual experiments: every video the same size, one under the other, caption beside it */
 .exp{grid-column:1/13;display:flex;flex-direction:column;gap:calc(var(--gut) * 1.5)}
 .exp .fig{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:var(--gut);align-items:start}
 .exp .fig .m{grid-column:1/9;width:min(100%, calc((var(--avail) - 4em) * 16 / 9))}
@@ -105,7 +98,6 @@ button:focus-visible{outline:2px solid var(--ink);outline-offset:-4px}
 .exp-note{grid-column:1/9;margin-top:calc(var(--gut) * 1.5);padding-top:var(--pad);border-top:var(--rule);font-size:var(--t-m)}
 .exp-note p{margin:0 0 .8em;max-width:46em;text-wrap:pretty}
 
-/* hidden index */
 .index{flex:1;overflow-y:auto;min-height:0}
 .index .rowhead{border-bottom:var(--rule)}
 .index .rowhead .nm{grid-column:2/6}
@@ -152,16 +144,8 @@ button:focus-visible{outline:2px solid var(--ink);outline-offset:-4px}
   <div class="stack" id="stack"></div>
 </div>
 
-<!-- students.js (made from the class sheet) holds every student's content.
-     It sits next to this file, on the iMac and on GitHub. If it is missing,
-     the list below is used and every page shows placeholders. -->
 <script src="students.js"></script>
 <script>
-/* ------------------------------------------------------------------
-   DATA. One entry per student, in the order of the class list.
-   Media paths are relative to this file, e.g. "media/dima-abdelhadi/exp-1.mp4".
-   Leave a field out to show its placeholder.
-------------------------------------------------------------------- */
 window.STUDENTS = window.STUDENTS || [
   "Dima Abdelhadi", "Aya Abdulmannan", "Shams Aboulkheir", "Elhassan Ahmed",
   "Haneen Ahmed", "Sundus Al-Hamadi", "Suha Alassar", "Noor Alqasimi",
@@ -172,7 +156,7 @@ window.STUDENTS = window.STUDENTS || [
 (function () {
 "use strict";
 
-const MARK = "2026";          // large text, top right of the hero
+const MARK = "2026";
 const SECTIONS = [
   { n: "01", label: "Design question" },
   { n: "02", label: "Theoretical work" },
@@ -198,10 +182,8 @@ const slug = s => String(s).toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "
 STUDENTS.forEach(s => { s.slug = s.slug || slug(s.name); });
 const bySlug = {}; STUDENTS.forEach(s => { bySlug[s.slug] = s; });
 
-/* ---------- helpers ---------- */
 const $ = id => document.getElementById(id);
 const esc = s => String(s == null ? "" : s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
-/* a line break in the sheet text starts a new paragraph */
 const paras = t => String(t).split(/\n+/).map(x => x.trim()).filter(Boolean).map(x => "<p>" + esc(x) + "</p>").join("");
 const or = (v, d) => (v === undefined || v === null || v === "" || (Array.isArray(v) && !v.length)) ? d : v;
 function glyph(open){
@@ -211,7 +193,6 @@ function glyph(open){
 }
 const isVideo = src => /\.(mp4|webm|mov|m4v)(\?|$)/i.test(src || "");
 function media(src, label, autoplay){
-  /* a missing file shows the grey frame again instead of a broken box */
   const miss = ' onerror="this.outerHTML=\'<span class=&quot;ph&quot;>' + (isVideo(src) ? "Video" : "Image") + ' missing</span>\'"';
   if (isVideo(src)) return '<video src="' + esc(src) + '" ' + (autoplay === false ? "" : "autoplay ") + 'muted loop playsinline preload="metadata"' + miss + '></video>';
   if (src) return '<img src="' + esc(src) + '" alt=""' + miss + '>';
@@ -226,7 +207,6 @@ function fig(item, opts){
 function pad(list, n, fill){ const out = (list || []).slice(); while (out.length < n) out.push(Object.assign({}, fill)); return out; }
 const num2 = i => String(i + 1).padStart(2, "0");
 
-/* ---------- section bodies ---------- */
 function body(n, s){
   if (n === "01"){
     const subs = or(s.subQuestions, []);
@@ -250,9 +230,7 @@ function body(n, s){
   if (n === "04"){
     const ex = pad(s.experiments, 3, {}).map(e => Object.assign({ caption: "", learned: "" }, e));
     const opt = i => ({ cap: "Title", ph: "Video", note: ex[i].learned ? "" : "Explanation" });
-    /* experimentsNote: optional closing text under the experiments, e.g. a planned test */
     const note = s.experimentsNote ? '<div class="exp-note">' + paras(s.experimentsNote) + '</div>' : "";
-    /* expFit: show every experiment whole, letterboxed on black, instead of cropped to fill */
     return '<div class="grid"><div class="exp' + (s.expFit ? ' fit' : '') + '">' + ex.map((e, i) => fig(e, opt(i))).join("") + '</div>' + note + '</div>';
   }
   if (n === "05"){
@@ -264,7 +242,6 @@ function body(n, s){
   return "";
 }
 
-/* ---------- views ---------- */
 let current = null, openN = null, view = "index";
 
 function render(){
@@ -294,11 +271,10 @@ function render(){
   fitTitle();
   stack.querySelectorAll(".rowhead").forEach(b => b.addEventListener("click", () => toggle(b.dataset.n)));
 }
-/* the title keeps the student's two lines; a long line makes the type smaller instead of wrapping */
 function fitTitle(){
   const t = document.querySelector(".hero h1"); if (!t) return;
   t.style.fontSize = "";
-  if (window.innerWidth <= 760) return;   /* on a phone the title wraps instead */
+  if (window.innerWidth <= 760) return;
   const over = t.scrollWidth / t.clientWidth;
   if (over > 1) t.style.fontSize = (parseFloat(getComputedStyle(t).fontSize) / over * 0.98) + "px";
 }
@@ -325,7 +301,6 @@ $("who").addEventListener("click", () => {
   render();
 });
 
-/* ---------- keyboard ---------- */
 document.addEventListener("keydown", e => {
   if (e.metaKey || e.ctrlKey || e.altKey) return;
   const k = e.key;
@@ -334,7 +309,6 @@ document.addEventListener("keydown", e => {
   if (k === "i" || k === "I"){ $("who").click(); return; }
 });
 
-/* ---------- boot ---------- */
 function fromHash(){ const h = decodeURIComponent((location.hash || "").slice(1)).toLowerCase(); return bySlug[h] ? h : null; }
 window.addEventListener("hashchange", () => { const h = fromHash(); if (h && h !== current) go(h); });
 const start = fromHash();

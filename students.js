@@ -1,11 +1,3 @@
-/* FMD 404 exhibition website: student content.
-   One entry per student, in class-list order. Built from the sheet
-   "FMD404 Exhibition Website Content". Media sit in media/<name>/.
-   A field left out shows its placeholder on the page.
-   title: one or two lines (\n starts the second). subtitle: optional, smaller, under the title.
-   theoretical.images: four or more; each extra pair adds a row.
-   experimentsNote: optional text shown under the experiments.
-   expFit: true shows experiment images and videos whole on black instead of cropped. */
 window.STUDENTS = [
   {
     name: "Dima Abdelhadi",
