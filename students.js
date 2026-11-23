@@ -191,21 +191,21 @@ window.STUDENTS = [
       text: "Through the analysis of cookbooks and women’s magazines, the ways in which recipes and cooking knowledge have been recorded and transferred within Egyptian culture can be examined. The research conducted through interviews, documentation of cooking practices and a sample of 21 participants, demonstrates that women within families (particularly mothers) remain very important in the transfer of cooking knowledge. However, it is clear that online resources are also becoming extremely important. In addition, physical and emotional effort required in cooking was found to be significant and the fluctuation in food costs is having an effect on traditional meals.",
       images: [
         { src: "media/haneen-ahmed/research-1.jpg", caption: "Usul al-Tabkh, Nazira Nicola and Bahiya Othman, Cairo, Egypt, 1941" },
-        { caption: "Hawaa magazine, Dar al-Hilal, Cairo, Egypt, 1958" },
-        { caption: "Molokheya, directed by Jonas Parienté, Egypt–France, 2015" },
-        { caption: "Food for Thought: Al-Muallaqat, Maha Malluh, Riyadh, Saudi Arabia, 2013" }
+        { src: "media/haneen-ahmed/research-2.jpg", caption: "Hawaa magazine, Dar al-Hilal, Cairo, Egypt, 1958" },
+        { src: "media/haneen-ahmed/research-3.jpg", caption: "Molokheya, directed by Jonas Parienté, Egypt–France, 2015" },
+        { src: "media/haneen-ahmed/research-4.jpg", caption: "Food for Thought: Al-Muallaqat, Maha Malluh, Riyadh, Saudi Arabia, 2013" }
       ]
     },
     cases: [
-      { caption: "Martha Rosler, Semiotics of the Kitchen, 1975",
+      { src: "media/haneen-ahmed/case-1.jpg", caption: "Martha Rosler, Semiotics of the Kitchen, 1975",
         note: "Focuses on real family experiences and inherited cooking knowledge." },
-      { caption: "Grandmas Project, Molokheya, 2015",
+      { src: "media/haneen-ahmed/case-2.jpg", caption: "Grandmas Project, Molokheya, 2015",
         note: "Explores three generations, domestic labour and changing food costs." },
-      { caption: "Maha Malluh, Food for Thought: Al-Muallaqat, 2013",
+      { src: "media/haneen-ahmed/case-3.jpg", caption: "Maha Malluh, Food for Thought: Al-Muallaqat, 2013",
         note: "Focuses on cooking processes and knowledge passed through practice." },
-      { caption: "Carrie Mae Weems, Kitchen Table Series, 1990",
+      { src: "media/haneen-ahmed/case-4.jpg", caption: "Carrie Mae Weems, Kitchen Table Series, 1990",
         note: "Focuses on food preparation and intergenerational traditions." },
-      { caption: "Rirkrit Tiravanija, Untitled (Free), 1992",
+      { src: "media/haneen-ahmed/case-5.jpg", caption: "Rirkrit Tiravanija, Untitled (Free), 1992",
         note: "Explores private family traditions rather than public food experiences." }
     ],
     expFit: true,
@@ -225,8 +225,103 @@ window.STUDENTS = [
       questions: "Does my project successfully connect the personal family story to wider themes of cultural heritage, women’s labour and economic change?\nHow can I balance documentary footage and animation to create a strong visual narrative?\nHow can I communicate the passing of knowledge between generations in a more engaging and visually meaningful way?"
     }
   },
-  { name: "Sundus Al-Hamadi" },
-  { name: "Suha Alassar" },
+  {
+    name: "Sundus Al-Hamadi",
+    keywords: ["Yemeni Qamariyyah", "Cultural Authenticity", "Materiality", "Traditional Craftsmanship"],
+    title: "Yemeni Qamariyyah: Authenticity,\nMaterial Change and Reproduction",
+    question: "How do contemporary reproductions of the traditional Yemeni Qamariyyah preserve, alter or transform its cultural authenticity?",
+    subQuestions: [
+      "How do changes in materials and production techniques affect the Qamariyyah’s visual identity, craftsmanship and function?",
+      "To what extent can contemporary reproductions retain the cultural significance of the traditional Qamariyyah?"
+    ],
+    abstract: "This project explores the cultural authenticity of the traditional Yemeni Qamariyyah, a decorative window found in traditional Yemeni architecture, particularly in the Old City of Sana’a. It investigates how the Qamariyyah has changed over time through the use of different materials and production methods, from alabaster and coloured glass to contemporary reproductions made using acrylic, printing and other techniques. The project asks what makes a Qamariyyah recognisable and culturally meaningful, and whether its authenticity depends on its materials, craftsmanship, visual identity or function. Through historical research, visual documentation and practical experiments, I will create and compare different versions of the same Qamariyyah pattern to examine how each affects its appearance, texture and interaction with light. Next semester, these findings will inform a multimedia outcome, potentially combining physical experiments, moving images and projection mapping to communicate how the Qamariyyah changes through reproduction.",
+    theme: "This project focuses on the relationship between cultural authenticity and modernization through the traditional Yemeni Qamariyyah. It explores how this architectural feature has evolved as materials and production methods have changed, and what aspects of its identity remain recognizable through these changes.\nThe objective is to understand where the cultural identity of the Qamariyyah lies by examining its materials, craftsmanship, patterns, function and relationship with light. Through research and practical experiments, I aim to compare traditional construction methods with contemporary reproductions and understand what is preserved, changed or lost in the process.",
+    relevance: "The topic is relevant because traditional architectural elements are increasingly being reproduced using modern materials and manufacturing techniques. While these reproductions can keep cultural designs visible and introduce them into contemporary spaces, they also raise questions about how much an object can change while still representing its original cultural identity.\nThis is particularly relevant to the Qamariyyah, as traditional craftsmanship in Yemen faces challenges due to conflict, economic difficulties and modernization. Understanding how the Qamariyyah is reproduced today can contribute to discussions about cultural preservation and the role of design in keeping traditional elements present in contemporary life.\nThe project is relevant to Yemenis, particularly younger generations and those living outside Yemen, as well as designers, architects and people interested in cultural heritage and its reinterpretation.",
+    motivation: "I chose this topic because I wanted to explore an element of Yemeni culture that I find visually interesting and understand more about its history and significance. The Qamariyyah caught my attention because of its distinctive patterns, coloured glass and the way it transforms natural light into coloured shapes and shadows.\nI became particularly interested in how it is being reproduced today using different materials and techniques. I wanted to understand whether these modern versions are simply inspired by the original or whether they can still carry the same cultural identity and meaning. Through this project, I hope to look beyond its visual appearance and explore the relationship between its materials, craftsmanship and cultural significance.",
+    theoretical: {
+      text: "My research found that the Qamariyyah has not always existed in the same form. Earlier versions used translucent alabaster before coloured glass became a defining feature. This shows that the materials used in traditional architecture can change over time without necessarily losing their cultural identity.",
+      images: [
+        { src: "media/sundus-al-hamadi/research-1.jpg", caption: "Qamariyas: Yemen’s Multi-Coloured Stained Glass Windows" },
+        { src: "media/sundus-al-hamadi/research-2.jpg", caption: "Traditional Multi-Story House (Tower House) in Sana’a City, Yemen: An Example of Sustainable Architecture" },
+        { src: "media/sundus-al-hamadi/research-3.jpg", caption: "ICOMOS, The Nara Document on Authenticity, 1994" },
+        { src: "media/sundus-al-hamadi/research-4.jpg", caption: "Xinhua, War Puts Industry of Yemeni Traditional Qamaria Window at Risk, 2020" }
+      ]
+    },
+    cases: [
+      { src: "media/sundus-al-hamadi/case-1.jpg", caption: "Afra’a Ahmed, Bint Al Qamariya, 2021",
+        note: "My project focuses on material experimentation and how different reproduction methods affect the Qamariyyah’s authenticity." },
+      { src: "media/sundus-al-hamadi/case-2.jpg", caption: "Haya Ali Al-Thani, The Dress I Knew First, 2026",
+        note: "My project focuses on the Yemeni Qamariyyah and investigates how changes in materials and production methods affect its visual identity and cultural authenticity." },
+      { src: "media/sundus-al-hamadi/case-3.jpg", caption: "Ise Grand Shrine, Japan",
+        note: "My project explores how reproducing a traditional object with alternative materials can affect its cultural authenticity and visual identity." }
+    ],
+    expFit: true,
+    experiments: [
+      { src: "media/sundus-al-hamadi/exp-1.jpg", caption: "Traditional Material Experiment: Gypsum and Coloured Glass",
+        learned: "Create a small Qamariyyah-inspired pattern using gypsum or plaster and coloured glass to explore traditional materials, handmade craftsmanship, texture and light." },
+      { src: "media/sundus-al-hamadi/exp-2.jpg", caption: "Laser-Cut Reproduction: Acrylic",
+        learned: "Recreate the same pattern using laser-cut acrylic to investigate how modern manufacturing changes the material, precision, texture and appearance." },
+      { src: "media/sundus-al-hamadi/exp-3.jpg", caption: "Printed Reproduction: Flat Surface",
+        learned: "Reproduce the same pattern as a printed design to examine what is lost when the three-dimensional structure, materials and transparency are removed." }
+    ],
+    practical: {
+      make: "A projection-mapped installation exploring the Yemeni Qamariyyah through light, colour, shadow and patterns. I will create three physical versions of the same Qamariyyah pattern using gypsum and coloured glass, laser-cut acrylic and print. Using projection mapping, I will experiment with projecting and layering coloured light and patterns onto surfaces to recreate the Qamariyyah’s distinctive light effects and explore how its visual identity changes through different materials and reproduction methods.",
+      showed: "The experiments revealed how different materials and production methods affect the appearance and visual qualities of the Qamariyyah. The handmade gypsum version showed the importance of physical texture, craftsmanship and depth, while the laser-cut version demonstrated how the pattern can be reproduced with greater precision but without the traditional material qualities. The printed version reduced the Qamariyyah to a flat image, removing its physical depth and material structure. These comparisons highlighted the role of material, texture and light in shaping the Qamariyyah’s visual identity, which I will explore further through projection mapping.",
+      questions: "How can I explore the idea of cultural authenticity without limiting it to the use of traditional materials?\nShould I focus more on the changes in the Qamariyyah’s materials and craftsmanship, or on how its visual identity is maintained through reproduction?\nHow can I make the comparison between traditional and contemporary reproductions more meaningful through my practical experiments?\nHow can I develop projection mapping beyond simply recreating the Qamariyyah’s coloured light and patterns, so that it communicates my research?"
+    }
+  },
+  {
+    name: "Suha Alassar",
+    keywords: ["Materiality", "Preservation", "Authenticity", "Perceived Value", "Controlled Deterioration"],
+    title: "Controlled Decay",
+    subtitle: "What Makes Damage Meaningful?",
+    question: "How do authentic and artificially recreated signs of deterioration influence the perceived value of photographic film and printed photographs?",
+    abstract: "Controlled Decay explores how physical deterioration affects the perceived value of photographic materials. Beginning with family archives, I want to investigate whether imperfections are valued for their appearance, history, or personal connections. Through research and material experiments, I will compare authentic deterioration, artificially created damage, and digital restoration. These findings will guide the development of my capstone next semester, with the possibility of exploring other analog media or a different direction.",
+    theme: "The project’s aim is to investigate how authentic and artificially recreated deterioration influences the value of photographic materials. The project questions whether deliberately creating damage changes how we perceive authenticity.",
+    relevance: "As photographs are increasingly stored digitally, their physical qualities can become overlooked. Digital restoration can remove imperfections, but it can also remove visible traces of an object’s history. This research questions what should be preserved and how deterioration influences the value of physical photographic records.",
+    motivation: "I grew up in a digital era, while my parents and older siblings preserved many of their memories through physical photographs and negatives. Looking through our family archive made me interested in how these materials changed over time and whether their imperfections would hold the same meaning for someone without a personal connection.",
+    theoretical: {
+      text: "Photographic deterioration is often seen as damage that should be removed, yet Riegl’s idea of age value and Holtorf’s concept of pastness suggest that signs of aging can also influence how an object is valued. My family archive showed this through photographs with fading, stains, scratches, and discoloration caused by poor storage, environmental exposure, and accidental damage. None of these marks were intentional, but they became part of the photographs’ history. To explore how people perceive these changes, I surveyed 10 family members and friends. Six correctly identified the original, artificially deteriorated, and digitally restored versions. Five preferred the original, four preferred the restored, and one preferred the artificially deteriorated photograph.",
+      images: [
+        { src: "media/suha-alassar/research-1.jpg", caption: "Personal family archive (analog film scan), UAE, 1998" },
+        { src: "media/suha-alassar/research-2.jpg", caption: "Personal family archive, UAE, 2006" },
+        { src: "media/suha-alassar/research-3.jpg", caption: "Personal family archive, UAE, c. 1980s–1995 (estimated)" },
+        { src: "media/suha-alassar/research-4.jpg", caption: "Digitally restored photograph, personal family archive, Turkey, c. 1997–2002. Restored in 2026" },
+        { src: "media/suha-alassar/research-5.jpg", caption: "Original photograph (naturally deteriorated), personal family archive, Turkey, c. 1997–2002. Scanned in 2026" },
+        { src: "media/suha-alassar/research-6.jpg", caption: "Artificially deteriorated photograph, personal family archive, Turkey, c. 1997–2002. Altered in 2026" }
+      ]
+    },
+    cases: [
+      { src: "media/suha-alassar/case-1.jpg", caption: "Akram Zaatari, Damaged Negatives: Scratched Portrait of Mrs. Baqari, 2012",
+        note: "Zaatari explores a damaged negative with a known history; I want to investigate how people value damage when its history is unknown." },
+      { src: "media/suha-alassar/case-2.jpg", caption: "Alison Rossiter, Eastman Kodak Azo Hard C Grade, processed 2010",
+        note: "Rossiter uses naturally aged photographic paper; I compare how people value authentic and artificially recreated deterioration." },
+      { src: "media/suha-alassar/case-3.jpg", caption: "Seung-Hwan Oh, Impermanence, 2012–2015",
+        note: "Oh intentionally deteriorates photographic film to create visual effects; I compare how people perceive natural and artificial deterioration." },
+      { src: "media/suha-alassar/case-4.jpg", caption: "Deborah Orloff, Elusive Memory, 2013–ongoing",
+        note: "Orloff explores deterioration in her family photographs; I compare how people with and without personal connections value damaged images." },
+      { src: "media/suha-alassar/case-5.jpg", caption: "Ziad Antar, Expired, 2000–ongoing",
+        note: "Antar uses expired film to create photographs; I investigate how natural and artificially created deterioration affect perceived value." }
+    ],
+    expFit: true,
+    experiments: [
+      { src: "media/suha-alassar/exp-1.jpg", caption: "Chemical Deterioration",
+        learned: "Experimented with lemon juice, baking soda, washing soda, and other household materials to create different staining and fading effects." },
+      { src: "media/suha-alassar/exp-2.jpg", caption: "Image Transfer",
+        learned: "Applied hand sanitizer to photographic prints, creating discoloration, texture changes, and partial image loss." },
+      { src: "media/suha-alassar/exp-3.jpg", caption: "Printing Material Test",
+        learned: "Laser prints showed less visible alteration compared with inkjet prints." },
+      { src: "media/suha-alassar/exp-4.jpg", caption: "Digital Restoration: Photoshop",
+        learned: "Removed scratches, stains, and discoloration from damaged family photographs." },
+      { src: "media/suha-alassar/exp-5.jpg", caption: "AI Restoration: Remini",
+        learned: "Tested AI enhancement to improve image clarity and explore how digital reconstruction changes the original photograph." }
+    ],
+    practical: {
+      make: "I am building a visual archive of photographic experiments, including chemical deterioration, comparisons between printing materials, and digital restoration. Next semester, I plan to review the results, narrow my focus, and develop the most relevant ideas further. The outcome could take an interactive or time-based form, but I want to leave the format open until the research helps me decide how best to present it.",
+      showed: "My tests showed that printing methods and paper types affect how images respond to chemical treatments. Inkjet prints showed stronger fading and discoloration, while laser prints changed much less. This made me question how my older family photographs were originally printed. Digital restoration also removed visible signs of damage and improved clarity, raising questions about what might be lost when an image is made to look undamaged.",
+      questions: "How can I expand my research beyond family archives while maintaining a connection to deterioration?\nShould I focus more on the physical changes to materials or how people respond to them?\nHow can I develop my experiments into something beyond a visual archive?"
+    }
+  },
   {
     name: "Noor Alqasimi",
     keywords: ["Mukhawar", "Jalabiya", "Decoration", "Material culture", "Categorization"],
@@ -524,7 +619,59 @@ window.STUDENTS = [
       questions: "How do I show the dystopian side of bonding with machines without sounding preachy?\nWhat else should I explore?"
     }
   },
-  { name: "Hana Safeer" },
+  {
+    name: "Hana Safeer",
+    keywords: ["Dupatta", "Renaming", "Cultural credit", "Appropriation", "Social media"],
+    title: "Woven from the same thread",
+    question: "How does renaming the South Asian dupatta as a “Scandinavian scarf” on social media change how its cultural origins are recognised and understood?",
+    subQuestions: [
+      "What is being said? When the scarf is called “Scandinavian”, do posts and listings mention the dupatta, South Asia or the women who wear it, and who gets credit?",
+      "What is felt? What does the dupatta mean to South Asian women in Sharjah, and how do they feel when it is renamed?"
+    ],
+    abstract: "",
+    theme: "This project is about language: what a name does to a familiar object that always existed. My focus is on one garment, one name, and one city. The objective is to show how a name can change the cultural meaning attached to a garment, and whose knowledge becomes visible or overlooked when that happens. I use ’appropriation’ as a working word, and I treat ’erasure’ as something to test.",
+    relevance: "Trends travel through names, captions and hashtags as much as images do. The project matters to South Asian women, who get to describe their own relationship with the garment. It matters to tailors and fabric sellers in Sharjah, who may name the same cloth differently. It matters to design students, who need to think about credit and context, and to social media audiences, who may not notice how much a caption shapes what they remember. It is deliberately narrow and doesn’t claim to cover cultural appropriation across fashion.",
+    motivation: "I chose this topic because it’s unsettling to see something I grew up with get a new identity under the pretence of a ’trend.’ The controversy made me question why a garment can be recognised as fashionable under one name while its existing cultural associations become less visible under another. As a design student, I also want the project to include lived experiences rather than relying entirely on online arguments. Speaking to South Asian women in Sharjah will help me understand that a dupatta is not just a symbol of cultural heritage; it can also have different meanings depending on the person, their personal connection to it, and how they choose to wear it.",
+    theoretical: {
+      text: "I interviewed 12 South Asian women in Sharjah, including a fashion design student, plus textile artist Masuma Khwaja. Ten of the 12 called the cloth a dupatta or shawl, the names used at home. One called it a headscarf and one a tablecloth, which shows how a cloth can read as something else once its context is removed. Everyone I spoke to said it is a dupatta, the garment they grew up with, and many saw the “Scandinavian scarf” as another case of the West taking from their cultures, as it has for years. For them, the new name does not change what the cloth is and what it means to them. They stuck to what felt true to them.",
+      images: [
+        { src: "media/hana-safeer/research-1.mp4", caption: "TikTok (@amtulsahmed and @christybaral_), online, 2025" },
+        { src: "media/hana-safeer/research-2.jpg", caption: "TikTok (@purefemininemuse), online, 2025. Screenshot taken Nov 2026" },
+        { caption: "Hana’s photography, Sharjah, 2026" },
+        { caption: "Google Search, UAE, 2026. Screen recording taken Nov 2026" }
+      ]
+    },
+    cases: [
+      { src: "media/hana-safeer/case-1.jpg", caption: "Meenakshi Gigi Durham, Displaced Persons: Symbols of South Asian Femininity and the Returned Gaze in U.S. Media Culture, 2001",
+        note: "Durham studies a wider range of South Asian symbols and media representations. My project focuses on one garment and one naming controversy, tracing specific online examples and comparing them with interviews conducted in Sharjah." },
+      { src: "media/hana-safeer/case-2.jpg", caption: "Textile Museum of Canada, From Cloth to Code: New Media Responses, 2025–2026",
+        note: "Rather than exploring textile heritage broadly, my project concentrates on the changing language attached to one garment. Its interaction reveals the relationship between a label, a date, and the source that used it." },
+      { src: "media/hana-safeer/case-3.jpg", caption: "Spatial Forces, Weaving Stories, 2026",
+        note: "Weaving Stories uses interaction to bring patterns together. My project is used to compare labels and reveal how the meaning of a familiar object can change according to the language and context surrounding it." },
+      { src: "media/hana-safeer/case-4.jpg", caption: "Omar Joseph Nasser-Khoury, “Let’s Not Tatreez: Normalisation in the Age of Neoliberal Depoliticisation”, Radio Free, 28 August 2020",
+        note: "Nasser-Khoury writes a political argument about one artist and one exhibition, and the essay is mainly about Palestinian politics and normalisation. I’m not making that argument. I study a trend name on social media, and I’m testing whether the rename erased anything. I use his essay as a model of how to argue about erased women’s work, not as a mirror for my conclusions." },
+      { src: "media/hana-safeer/case-5.jpg", caption: "Prada and the Kolhapuri sandals, June 2025",
+        note: "Prada is one powerful company with a named product, a protected style and a clear response, so the case can be followed in press statements. “Scandinavian scarf” has no single owner. It began as a caption, spread across creators and brands, and was answered by the people who wear it. My project asks what happens when there is no company to hold accountable, only a name that goes around openly on the internet." }
+    ],
+    expFit: true,
+    experiments: [
+      { caption: "Regional name dictionary",
+        learned: "I collected draped cloths from Europe, Latin America, Africa, South and Southeast Asia, and the Middle East, with their names. It shows that the same rectangle of cloth gets different names depending on region and use, which is your “one cloth, many names” argument. It also stops you from treating “dupatta” as the only name in the story." },
+      { src: "media/hana-safeer/exp-2.mp4", caption: "Photo shoots",
+        learned: "I photographed the similar kind of cloth on different people in different styles: the navy sheer over a printed kurta and jeans, the maroon with a gold border over a black top, and the white net with chikankari.\nI’m testing what makes a cloth read as a dupatta. If a plain navy one can pass as a “scarf”, the name depends on styling and context, not the fabric, which supports my “the edit before the name” idea." },
+      { caption: "12 interviews with a recognition question",
+        learned: "I showed the cloth and asked what people call it. Most said dupatta or shawl, one said headscarf, one tablecloth.\nIt’s my main test of whether the rename changes recognition for the people who wear it. The two outliers show that context can change what the cloth reads as." },
+      { src: "media/hana-safeer/exp-4.jpg", caption: "Image comparison",
+        learned: "It shows what was removed (colour, embroidery, border, matching set) before the name changed. It turns an impression into something you can point at." },
+      { src: "media/hana-safeer/exp-5.jpg", caption: "Colour and glitch treatments of the shayla images",
+        learned: "It’s the visual version of my question, because a garment can look different without changing, just as it can be called something different." }
+    ],
+    practical: {
+      make: "A looping digital archive, built from the dated archive and the participants’ voices. In the film, one cloth appears on different people while the label changes. I also want to experiment with how the whole concept works if different women speak different languages in South Asia, representing how what a dupatta means can vary from one place in South Asia to another. I want to project my archival footage on a sheer organza dupatta.",
+      showed: "The interviews worked best: 10 of 12 women called the cloth a dupatta or shawl, while a headscarf and a tablecloth answer showed context can change what it reads as. My shoots showed that embroidery, border, and kurta, not fabric, mark a dupatta. What failed is that the original Bipty video was deleted, so I can’t trace it directly. I only got a part of it. I’ll keep the interviews, shoots and name dictionary, and add a caption test.",
+      questions: "Is ’appropriation’ the right word, or should I wait for the evidence to name it?\nDoes a looping film with the digital archive earn its place, or would the archive plus a single film be stronger?\nShould I keep the comparison to draped cloths in Sharjah, or widen it to other cultures’ garments?\nWhat if the women I interview aren’t upset about the rename? How should the film handle that?\nIs comparing this to paisley fair, given that paisley had a manufacturer behind the name?"
+    }
+  },
   {
     name: "Maya Tabsh",
     keywords: ["Subjective memory", "Nature vs. nurture", "Childhood", "Twin identity", "Memory reconstruction"],
