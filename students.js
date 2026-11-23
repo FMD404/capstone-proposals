@@ -55,7 +55,72 @@ window.STUDENTS = [
       questions: "Do you think nafs can truly be separated from the person who makes the dish?\nCan nafs exist without someone recognising it, or does it only become meaningful when it is experienced by someone else?"
     }
   },
-  { name: "Aya Abdulmannan" },
+  {
+    name: "Aya Abdulmannan",
+    keywords: ["Generative AI", "Smart replies", "Recommendation feeds", "Choice architecture", "Authorship"],
+    title: "It Sounded\nLike Me",
+    question: "When AI decides what I see and suggests what I say, am I still writing, or just approving?",
+    subQuestions: [
+      "When people can no longer tell their own words from AI’s, do they still feel the words are theirs?",
+      "Who benefits when people stop writing and start approving?"
+    ],
+    abstract: "It started with a message my phone wrote for me. It sounded like me, so I sent it without thinking twice. Today bots make up more than half of web traffic, about half of new English articles are mainly written by AI, and recommendations choose most of what we watch. This project asks: when AI decides what I see and suggests what I say, am I still writing, or just approving? Ten small tests with university students in the UAE looked at what feeds show us, what our phones suggest we say, and whether we notice. When suggestions were there, 75% of the words people sent came from the phone, and 18 of 18 people picked an AI rewrite as their own message. One prediction failed: everyone noticed a direct swap. Next semester the research becomes an animated film and a game that label every word by its real author.",
+    theme: "The project looks at how writing online is turning into approving: a feed to scroll, a reply to tap, a suggestion to accept. It sets out to measure that shift in everyday use, separating what the algorithm ranks, what the AI writes and what the interface pushes, and to make it visible.",
+    relevance: "Most of what people watch is now recommended, and phones suggest replies in every chat. This matters for anyone who scrolls a feed or taps a suggested reply every day, and especially for bilingual students here, whose Arabizi the keyboard does not even recognise. When a suggestion sounds like us, we stop noticing it is not ours.",
+    motivation: "I caught myself sending a message my phone had written for me. It sounded like me, so I did not think twice. Then I wondered how many of my small choices that day were really mine, and how much of what I scroll every day was written by anyone at all.",
+    theoretical: {
+      text: "Platforms report that recommendations drive about 80% of Netflix viewing and over 70% of YouTube watch time, and studies show AI suggestions make writing more predictable and can even shift opinions. My ten tests found that feeds were fully personal: four people searching “cat” got no video in common. When suggestions were there, 75% of the words people sent came from the phone, in Arabic, Arabizi and English. A “Suggested” label alone was picked 63% of the time against 25% by chance, and 18 of 18 people picked an AI rewrite as their own message. Only a direct swap was noticed.",
+      images: [
+        { src: "media/aya-abdulmannan/research-1.jpg", caption: "Headline results across five tests, UAE, 2026" },
+        { src: "media/aya-abdulmannan/research-2.jpg", caption: "Just Reply test, words from suggestions per person, UAE, 2026" },
+        { src: "media/aya-abdulmannan/research-3.jpg", caption: "10 Quick Choices test, picks of the “Suggested” option, UAE, 2026" },
+        { src: "media/aya-abdulmannan/research-4.jpg", caption: "Same Search test, “fashion” on Instagram for 8 people, UAE, 2026" }
+      ]
+    },
+    cases: [
+      { src: "media/aya-abdulmannan/case-1.jpg", caption: "Ahmad AlAttar, Human in the Loop, 2026",
+        note: "His algorithm stays hidden; mine shows which system steered you." },
+      { src: "media/aya-abdulmannan/case-2.jpg", caption: "Noah Levenson, Stealing Ur Feelings, 2019",
+        note: "It reads your face; mine reads your words." },
+      { src: "media/aya-abdulmannan/case-3.jpg", caption: "Zach Gage, Glaciers, 2011",
+        note: "It shows what autocomplete suggests to everyone; mine shows what it does to one person." },
+      { src: "media/aya-abdulmannan/case-4.jpg", caption: "Alice Pailhès, Forcing agency, 2021",
+        note: "She forces choices with cards in a lab; I do it on phone screens." },
+      { caption: "Ziqian Liu, Calculated, 2025",
+        note: "It stages control; mine measures it." }
+    ],
+    experiments: [
+      { src: "media/aya-abdulmannan/exp-1.jpg", caption: "Just Reply",
+        learned: "An app I built where 13 people answered texts in Arabic, Arabizi and English with one-tap suggestions: 75% of the words they sent came from the phone. When I did it, 63% of my words came from the phone." },
+      { src: "media/aya-abdulmannan/exp-2.jpg", caption: "10 Quick Choices",
+        learned: "One option was labelled “Suggested” and shown first, with no AI involved, and people picked it 63% of the time. I picked it 5 out of 5 times, even though I built the test." },
+      { src: "media/aya-abdulmannan/exp-3.jpg", caption: "Same Message, Three Languages",
+        learned: "I typed the same five messages in English, Arabic and Arabizi on my keyboard. Arabizi got 0 of 5 suggestions in its own language, because I don’t usually type in it." },
+      { src: "media/aya-abdulmannan/exp-4.jpg", caption: "Before You Open the App",
+        learned: "Ten people, including me, said what we wanted to see, then scrolled for two minutes: the feed matched only 5 of 10, and we kept watching anyway." },
+      { src: "media/aya-abdulmannan/exp-5.jpg", caption: "Intro Reel",
+        learned: "Four of us, including me, searched “cat” on TikTok at the same minute and got no video in common; for “fashion” on Instagram, only 1 of 48 results matched." },
+      { src: "media/aya-abdulmannan/exp-6.jpg", caption: "Who’s Choosing? Survey",
+        learned: "I made a brand new TikTok account on my phone. It started with old viral videos, and after about 20 swipes it switched to food, which is what I usually watch." },
+      { src: "media/aya-abdulmannan/exp-7.jpg", caption: "Autopilot Day",
+        learned: "Six of us, including me, spent a day accepting only suggested content, and deciding felt easy, 1.2 out of 5." },
+      { src: "media/aya-abdulmannan/exp-8.jpg", caption: "Which One Did You Write?",
+        learned: "AI rewrote each person’s real message three times, and all 18 of us, including me, picked an AI version as the one we wrote." },
+      { src: "media/aya-abdulmannan/exp-9.jpg", caption: "The Swap",
+        learned: "A friend picked one of two options and I secretly handed her the other. Everyone noticed, so my prediction failed, and next I will run it on myself." },
+      { src: "media/aya-abdulmannan/exp-10.jpg", caption: "Interviews",
+        learned: "Two people who use suggested replies every day said they rely on them without thinking. Next, I will answer the same questions myself." },
+      { src: "media/aya-abdulmannan/exp-11.mp4", caption: "Intro Reel",
+        learned: "A short reel testing a first visual language for the project: human against machine." },
+      { src: "media/aya-abdulmannan/exp-12.jpg", caption: "Who’s Choosing? Survey",
+        learned: "An “AI” called MIRA predicted people’s answers. It failed as a claim, because the AI was a rule I wrote, but it showed how easily a designed system feels like it knows you." }
+    ],
+    practical: {
+      make: "An animated film and a game. The film shows the shift from searching, choosing and writing for ourselves to scrolling, tapping and approving what is suggested. In the game, visitors reply and choose as they normally would, then every word and choice is labelled by its real author: them, a suggestion or the layout. Both will be shown together at the capstone exhibition next semester.",
+      showed: "When suggestions are there, people take them, and the AI version feels more like them than their own words. A label alone can steer a choice with no AI at all. What failed: my first “AI” survey was really a rule I wrote, and the dark test design put people off. I keep honest reveals and a softer look.",
+      questions: "Should the animation and the game be one experience or two?\nHow do I show “before” without making the past look perfect?\nHow much of my real test data should the game use?"
+    }
+  },
   { name: "Shams Aboulkheir" },
   {
     name: "Elhassan Ahmed",
@@ -113,7 +178,59 @@ window.STUDENTS = [
   { name: "Suha Alassar" },
   { name: "Noor Alqasimi" },
   { name: "Hala El Khatib" },
-  { name: "Joud Elayan" },
+  {
+    name: "Joud Elayan",
+    keywords: ["Surveillance", "Self-recognition", "Dystopian", "Behavioral habituation", "Speculative design"],
+    title: "Unseen",
+    subtitle: "Surveillance, Anonymity, and the Prohibition of Self-Recognition",
+    question: "When a regime strips away names, faces, and mirrors, does removing self-recognition make citizens easier to control, or does external surveillance lose its power once normalized?",
+    subQuestions: [
+      "Does seeing one’s own reflection enforce rule compliance more effectively than being watched by an external camera?",
+      "How quickly do people habituate to visible monitoring, and where do they seek blind spots when self-awareness is removed?"
+    ],
+    abstract: "Unseen extends an existing dystopian short film into a speculative, interactive audiovisual installation exploring surveillance, anonymity, and the prohibition of self-recognition. In this authoritarian world, the state sees every citizen, yet citizens cannot see themselves: people wear gas masks, carry assigned numbers instead of names, and are strictly forbidden from viewing their reflections. While classical surveillance theory assumes constant observation guarantees obedience, recent behavioral research shows that compliance fades once monitoring becomes routine, whereas mirrors and self-awareness strongly enforce rule following. Unseen investigates this paradox for people in the UAE who navigate webcam proctored exams, social media and pervasive front camera culture. Combining projected film sequences, physical regime artefacts, and live camera tracking software, the installation turns the exhibition space into a controlled behavioral test. Visitors are tracked without seeing their reflections, and their compliance and blind-spot seeking are measured and revealed at the exit, testing whether power depends on external watchers or internal self-surveillance.",
+    theme: "Unseen extends a dystopian film into an interactive installation where the state sees citizens, yet citizens cannot see themselves. Through gas masks, numbered identities, and a strict mirror and reflection ban, the project tests whether removing self-recognition strengthens authoritarian obedience or weakens surveillance once external monitoring becomes routine.",
+    relevance: "Today, young people grow up under constant front-camera self-viewing, algorithmic tracking, and automated monitoring. For UAE university students sitting webcam proctored exams, surveillance shapes daily posture, attention, and self-censorship. Unseen flips modern hypervisibility into enforced invisibility, questioning how digital monitoring and self-observation jointly regulate contemporary behavior.",
+    motivation: "This project builds on the dystopian world of my existing film to investigate a contradiction in my research: if mirrors and names make people self-regulate, why would a dictatorship ban reflections? I chose to test how a regime maintains control after surveillance becomes normalized.",
+    theoretical: {
+      text: "While Foucault’s panopticon suggests constant visibility enforces obedience, empirical studies complicate this assumption. Chen and Zhan (2026) show that surveillance compliance rises initially but fades as monitoring normalises, while Shi and Xu (2024) and Hope (2005) reveal how subjects actively exploit camera blind spots. Conversely, Diener (1976), Beaman et al. (1979), and Jansen et al. (2018) demonstrate that anonymity increases rule breaking, whereas mirrors and self-viewing significantly reduce cheating. Alongside Zamyatin’s We (1921) and speculative design theory, my film screenings and student proctoring interviews showed that participants adapted quickly to static cameras, while self-reflection triggered sharper self-correction.",
+      images: [
+        { src: "media/joud-elayan/research-1.jpg", caption: "Jeremy Bentham, Panopticon prison plan, London, 1791" },
+        { src: "media/joud-elayan/research-2.jpg", caption: "Arthur Beaman et al., Mirror and self-awareness experiment, Seattle, 1979" },
+        { src: "media/joud-elayan/research-3.jpg", caption: "Erving Goffman, The Presentation of Self in Everyday Life, Edinburgh, 1956" },
+        { src: "media/joud-elayan/research-4.jpg", caption: "Michel Foucault, Discipline and Punish: The Birth of the Prison, New York, 1977" }
+      ]
+    },
+    cases: [
+      { src: "media/joud-elayan/case-1.jpg", caption: "Dan Graham, Present Continuous Past(s), 1974",
+        note: "Graham pairs mirrors with delayed video feedback to heighten self-awareness, whereas Unseen removes all reflections to test whether stripped self-recognition weakens obedience." },
+      { src: "media/joud-elayan/case-2.jpg", caption: "Rafael Lozano-Hemmer, Under Scan, 2005",
+        note: "Lozano-Hemmer uses tracking to reveal individual portraits inside shadows, while Unseen suppresses facial identity and measures whether anonymity lowers rule compliance." },
+      { src: "media/joud-elayan/case-3.jpg", caption: "Rafael Lozano-Hemmer and Krzysztof Wodiczko, Zoom Pavilion, 2015",
+        note: "Zoom Pavilion zooms in on visitors’ faces and projects live feeds onto the walls to heighten awareness of being watched, whereas Unseen hides reflections and facial identity to test whether removing self-recognition weakens compliance." },
+      { src: "media/joud-elayan/case-4.jpg", caption: "Random International and Chris O’Shea, Audience, 2008",
+        note: "Audience turns dozens of small motorized mirrors into a panoptic crowd that swivels to track a single visitor, whereas Unseen denies visitors any reflective gaze while recording their blind-spot behaviour." },
+      { src: "media/joud-elayan/case-5.jpg", caption: "George Lucas, THX 1138, 1971",
+        note: "THX 1138 depicts numbered, uniform citizens governed by panoptic cameras on screen, whereas Unseen extends that cinematic world into a live exhibition space that measures how visitors habituate to monitoring." }
+    ],
+    experiments: [
+      { caption: "Four-Condition Rule Compliance Test",
+        learned: "I placed a “TAKE ONE ONLY” sign by a bowl under four conditions: a blank wall, printed eyes, a live webcam feed, and a mirror. I then counted rule-breaking. This tested whether self-recognition enforces obedience more effectively than external monitoring." },
+      { caption: "First Minute vs. Tenth Minute Habituation Test",
+        learned: "I filmed participants in a monitored room for ten minutes to compare their posture and compliance in the first minute against the tenth. This tested Chen and Zhan’s (2026) finding that visible surveillance loses its effect once monitoring becomes routine." },
+      { src: "media/joud-elayan/exp-3.jpg", caption: "CAAD CCTV and Blind-Spot Mapping",
+        learned: "I mapped every visible CCTV camera across CAAD and photographed the architectural blind spots outside their sightlines. This visual study identified how physical spaces create pockets of evasion, informing the layout of my installation." },
+      { src: "media/joud-elayan/exp-4.mp4", caption: "Automated Pedestrian Tracking and Number Assignment",
+        learned: "I filmed pedestrians walking through a space while computer vision tracking followed their paths and labelled each person as a number “Object X”. This tested how automated surveillance reduces individual identity to numbered data points, translating Unseen’s birth number system into live tracking." },
+      { src: "media/joud-elayan/exp-5.mp4", caption: "CCTV Identity and Reflection Erasure Test",
+        learned: "I processed CCTV footage using Artkit to black out every person’s face and any reflective surfaces, leaving only greyscale silhouettes and posture visible. This tested how clearly an observer can still read human obedience and hesitation when all facial identity and self-reflection are erased." }
+    ],
+    practical: {
+      make: "Next semester, I will build an interactive audiovisual installation for the CAAD Capstone Exhibition at the American University of Sharjah. Extending my film Unseen, the space pairs multichannel projection and physical regime artifacts, gas masks, numbered IDs, and mirror-ban notices, with a real-time TouchDesigner and p5.js tracking system. Visitors enter an observation zone with no reflective surfaces, follow simple spatial prompts while tracked, and confront live data visualisations of their compliance and blind-spot behavior upon exiting.",
+      showed: "Across five experiments, automated pedestrian tracking and face and object erasure worked best, stripping identity while keeping posture readable. In the rule and masked-versus-mirrored film tests, mirrors enforced obedience and self-consciousness, whereas static printed eyes and visible cameras failed as subjects habituated by minute ten. CAAD camera mapping also exposed clear architectural blind spots. Moving forward, I will keep live numbered tracking, reflection erasure, and spatial blind spots.",
+      questions: "How can the installation reveal visitors’ recorded compliance data at the exit without breaking the dystopian world’s immersion?\nDoes removing mirrors and facial identity in the gallery space make visitors feel freer to break rules, or more self-conscious?\nHow should the projected film narrative and the live camera-tracking experiment share spatial hierarchy so neither overpowers the other?"
+    }
+  },
   {
     name: "Shahad Muallemi",
     keywords: ["Time perception", "Task-switching", "Interruptions", "Attention", "Time pressure"],
