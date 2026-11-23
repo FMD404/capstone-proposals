@@ -98,19 +98,19 @@ window.STUDENTS = [
       { src: "media/aya-abdulmannan/exp-3.jpg", caption: "Same Message, Three Languages",
         learned: "I typed the same five messages in English, Arabic and Arabizi on my keyboard. Arabizi got 0 of 5 suggestions in its own language, because I don’t usually type in it." },
       { src: "media/aya-abdulmannan/exp-4.jpg", caption: "Before You Open the App",
-        learned: "Ten people, including me, said what we wanted to see, then scrolled for two minutes: the feed matched only 5 of 10, and we kept watching anyway." },
+        learned: "Ten people, including me, said what we wanted to see, then scrolled for two minutes: the feed matched only 5 of 10, and we kept watching anyway. I wanted cooking, and got cooking." },
       { src: "media/aya-abdulmannan/exp-5.jpg", caption: "Same Search",
-        learned: "Four of us, including me, searched “cat” on TikTok at the same minute and got no video in common; for “fashion” on Instagram, only 1 of 48 results matched." },
+        learned: "Four of us searched “cat” on TikTok at the same minute and got no video in common; for “fashion” on Instagram, only 1 of 48 results matched. I was Person 1 both times, and my fashion feed was all evening gowns." },
       { src: "media/aya-abdulmannan/exp-6.jpg", caption: "Blank Slate",
         learned: "I made a brand new TikTok account on my phone. It started with old viral videos, and after about 20 swipes it switched to food, which is what I usually watch." },
       { src: "media/aya-abdulmannan/exp-7.jpg", caption: "Autopilot Day",
-        learned: "Six of us, including me, spent a day accepting only suggested content, and deciding felt easy, 1.2 out of 5." },
+        learned: "Six of us spent a day accepting only suggested content. The others rated deciding 1.2 out of 5. I went first, and it was so easy: 0 out of 5." },
       { src: "media/aya-abdulmannan/exp-8.jpg", caption: "Which One Did You Write?",
         learned: "AI rewrote each person’s real message three times, and all 18 of us, including me, picked an AI version as the one we wrote." },
       { src: "media/aya-abdulmannan/exp-9.jpg", caption: "The Swap",
-        learned: "A friend picked one of two options and I secretly handed her the other. Everyone noticed, so my prediction failed, and next I will run it on myself." },
+        learned: "A friend picked one of two options and I secretly handed her the other. Everyone noticed, including me when it was done to me, so my prediction failed." },
       { src: "media/aya-abdulmannan/exp-10.jpg", caption: "Interviews",
-        learned: "Two people who use suggested replies every day said they rely on them without thinking. Next, I will answer the same questions myself." },
+        learned: "Two people who use suggested replies every day said they rely on them without thinking." },
       { src: "media/aya-abdulmannan/exp-11.mp4", caption: "Intro Reel",
         learned: "A short reel testing a first visual language for the project: human against machine." },
       { src: "media/aya-abdulmannan/exp-12.jpg", caption: "Who’s Choosing? Survey",
@@ -118,7 +118,7 @@ window.STUDENTS = [
     ],
     practical: {
       make: "An animated film and a game. The film shows the shift from searching, choosing and writing for ourselves to scrolling, tapping and approving what is suggested. In the game, visitors reply and choose as they normally would, then every word and choice is labelled by its real author: them, a suggestion or the layout. Both will be shown together at the capstone exhibition next semester.",
-      showed: "When suggestions are there, people take them, and the AI version feels more like them than their own words. A label alone can steer a choice with no AI at all. What failed: my first “AI” survey was really a rule I wrote, and the dark test design put people off. I keep honest reveals and a softer look.",
+      showed: "When suggestions are there, people take them, and the AI version feels more like them than their own words. That was true for me too: I picked “Suggested” every time in my own test. What failed: my first “AI” survey was really a rule I wrote. I keep honest reveals and a softer look, and I will keep running these tests on myself.",
       questions: "Should the animation and the game be one experience or two?\nHow do I show “before” without making the past look perfect?\nHow much of my real test data should the game use?"
     }
   },
@@ -178,7 +178,55 @@ window.STUDENTS = [
   { name: "Sundus Al-Hamadi" },
   { name: "Suha Alassar" },
   { name: "Noor Alqasimi" },
-  { name: "Hala El Khatib" },
+  {
+    name: "Hala El Khatib",
+    keywords: ["Moulting", "Soft stage", "Liminality", "Affect", "Vulnerability"],
+    title: "The Soft\nHours",
+    question: "How can the stages of crustacean moulting become a visual and material language for vulnerability and change?",
+    subQuestions: [
+      "What actually happens to a crab’s body and behaviour during the soft stage (swelling, softening, hiding, hardening), and which of these can be translated into material and time?",
+      "Can a change that is too slow to notice still be felt by viewers in their bodies, before they can name it?"
+    ],
+    abstract: "The Soft Hours is about the stage of moulting when a crab has left its old shell and its new one is still soft. A crab can only grow when it is unprotected: it swells with water, hides, and waits for calcium to harden its new shell. Protection and growth cannot happen at the same time. The project grows out of a personal shift in how I experience emotion, and from noticing that we rarely feel ourselves change while it is happening, only afterwards. It brings together research into crab biology and behaviour, and theories of affect and liminality, with material tests on a real crab shell that soften and harden in real time. Rather than using the crab only as a metaphor, the project follows its real process, asking how a change too slow to notice can still be felt in the body, by the crab and by us.",
+    theme: "The project explores the soft stage of moulting: the hours when a crab has shed its shell and its new one is still soft, the only time it can grow. It aims to understand this stage from the crab’s side and use its real timings and materials to make a space where change happens too slowly to notice.",
+    relevance: "Change rarely announces itself: after a loss, an illness or any big shift, people often only realise later how differently they feel. The project gives that unnoticed, in-between stage a form. It also shows the crab’s soft stage, the only time it grows, from its own side, rather than as the hard specimen or food we usually see.",
+    motivation: "This project started from something personal. When my mum was diagnosed with cancer, the way I deal with my emotions changed: I used to keep them at a distance, and now I let myself feel them. I only noticed the change once it had happened. Moulting caught my attention because a crab also changes without protection, slowly, out of sight.",
+    theoretical: {
+      text: "Crabs have long been pictured hard and finished, as specimens or food, yet research shows the soft stage changes behaviour as much as the body: crabs stop feeding and hide until the new shell hardens. With strong evidence that crabs are sentient, this stage is likely felt, though, as Uexküll and Nagel remind us, never fully knowable from outside. People pass through something similar: Turner called it the liminal stage, and Massumi describes change felt in the body before it can be named. My own tests on a crab shell showed the same pattern: it softened and changed colour between my checks, and I only noticed afterwards.",
+      images: [
+        { src: "media/hala-el-khatib/research-1.jpg", caption: "Stage 1: Intermoult (hard crab). Rheanna Brett, Shutterstock, via A-Z Animals, 2025" },
+        { src: "media/hala-el-khatib/research-2.jpg", caption: "Stage 2: Ecdysis (buster, backing out of the shell). Mary Hollinger, NOAA, Tangier Island, Virginia, 1999" },
+        { src: "media/hala-el-khatib/research-3.jpg", caption: "Stage 3: Postmoult (just out of the old shell). Jay Fleming, “Soft Shell Crab Shedding”, Smith Island, Maryland, 2016" },
+        { src: "media/hala-el-khatib/research-4.jpg", caption: "Stage 4: Exuvia (the shell left behind). Blipfoto, “Blue inside a crab shell, empty!”" },
+        { src: "media/hala-el-khatib/research-5.jpg", caption: "Stage 5: Hardening (hard again). Chesapeake Bay Program, Maryland" }
+      ]
+    },
+    cases: [
+      { src: "media/hala-el-khatib/case-1.jpg", caption: "Tehching Hsieh, One Year Performance (Time Clock Piece), 1980–81",
+        note: "Hsieh compresses a year into minutes to reveal the change; I keep real time and let viewers live inside it." },
+      { src: "media/hala-el-khatib/case-2.jpg", caption: "Zoe Leonard, Strange Fruit, 1992–97",
+        note: "Leonard’s skins mourn something that is gone; a moulted shell marks something still alive and growing." },
+      { src: "media/hala-el-khatib/case-3.jpg", caption: "Jean Painlevé and Éli Lotar, Crabes et crevettes, 1930",
+        note: "Painlevé shows crustaceans from the outside, often active and alive; I focus on the hidden, still hours when the crab is soft, the stage his camera rarely caught." },
+      { src: "media/hala-el-khatib/case-4.jpg", caption: "Pierre Huyghe, Zoodram 5 (after “Sleeping Muse” by Constantin Brancusi), 2011",
+        note: "Huyghe gives the crab an artwork as a shell; I focus on the hours when it has no shell at all." },
+      { src: "media/hala-el-khatib/case-5.jpg", caption: "Jeongwon Ji, BioElectric, 2013",
+        note: "Ji turns crab shell into useful objects; I use it to show the soft stage itself, so the change is the work." }
+    ],
+    experiments: [
+      { src: "media/hala-el-khatib/exp-1.jpg", caption: "Two ways of seeing: the specimen",
+        learned: "I photographed a blue swimmer crab shell laid out flat on white, the way science shows animals: finished, still and distant. While drying, its colour shifted from blue-green to orange-brown." },
+      { caption: "Unshelling in vinegar",
+        learned: "I soaked the shell in white vinegar for 12 hours to dissolve its calcium. The hard shell became soft, bendable and translucent, the closest I can get to a soft stage without a live moult." },
+      { caption: "Unshelling in citric acid",
+        learned: "I soaked a matching piece in citric acid to compare speeds. It softened faster than in vinegar, in 5 hours instead of 12, but once dry the shell was weaker: speeding up the soft stage left it more fragile." }
+    ],
+    practical: {
+      make: "A time-based work, shown in a gallery space, that lets visitors pass through a soft stage without noticing it. Its final form is still open: an installation, a moving-image piece, or objects that change during the show. What stays fixed are the rules: real crab timings and materials, change too slow to see, and text that never names a feeling, only what a body does.",
+      showed: "What worked: I tested shell pieces in different acids (vinegar, citric acid, vitamin C). In vinegar, the shell became soft, bendable and translucent, the closest to a soft stage without a live moult. What failed: the changes happened between my checks, so I missed them, and the shell lost its blue-green colour, turning a translucent orange. What I keep: the softened shell, backlit as a skin, and the finding that change is only noticed afterwards.",
+      questions: "Does the work still read as being about crabs if I never show a whole crab?\nLive crab, or traces and footage only? Which is more honest to the crab?\nHow do I keep “soft” away from soft-shell crab as food?"
+    }
+  },
   {
     name: "Joud Elayan",
     keywords: ["Surveillance", "Self-recognition", "Dystopian", "Behavioral habituation", "Speculative design"],
@@ -377,6 +425,49 @@ window.STUDENTS = [
     }
   },
   { name: "Hana Safeer" },
-  { name: "Maya Tabsh" },
+  {
+    name: "Maya Tabsh",
+    keywords: ["Subjective memory", "Nature vs. nurture", "Childhood", "Twin identity", "Memory reconstruction"],
+    title: "Two\nTruths",
+    question: "Does sharing the same upbringing necessarily mean sharing the same childhood?",
+    abstract: "“Two Truths” explores the relationship between childhood memory, identity, and perception through the experiences of twins raised together. Although twins share the same upbringing and many childhood events, they can develop different personalities, perspectives, and memories. Drawing from my personal experience as a fraternal twin, this project asks: Does sharing the same upbringing necessarily mean sharing the same childhood? Rather than determining whose memories are correct, I want to understand why two people can remember and experience the same events differently. Through research on memory reconstruction, twin identity, and nature versus nurture, alongside interviews and visual experiments with my twin brother, I will investigate how individual experiences shape our understanding of a shared past.",
+    theme: "This project explores the relationship between memory, perception, and reality through twins raised together. Despite sharing the same upbringing, twins may experience and remember events differently. Through these differences, I aim to question whether two people can truly share the same experience or truth, and how individual perspectives shape our understanding of reality and identity.",
+    relevance: "Childhood experiences shape our identities, yet people raised in the same environment can develop different memories and perspectives. This topic is relevant to siblings, families, and anyone who has experienced conflicting memories. It also questions how photographs, videos, and digital archives influence our recollections, reminding us that recorded evidence can still be shaped by framing and interpretation.",
+    motivation: "As a fraternal twin, being a twin has always been an important part of my identity. Despite growing up in the same household and sharing many experiences, my brother and I developed different personalities and perspectives. Realizing that we sometimes remember the same childhood events differently made me question whether sharing the same upbringing necessarily means sharing the same childhood.",
+    theoretical: {
+      text: "Sheen et al. (2001) explore how twins can remember the same childhood event differently, highlighting how memory is reconstructed through individual perspectives. Plomin and Daniels (1987) examine how siblings raised together develop different identities due to nonshared experiences and environments. Berger (1972), in Ways of Seeing, explores how personal experiences and context influence the interpretation of images, helping me question how family photographs shape childhood memories. Together, these sources support my exploration of how a shared upbringing can produce different memories, perspectives, and identities.",
+      images: [
+        { src: "media/maya-tabsh/research-1.jpg", caption: "Primary research, UAE, 2026" },
+        { src: "media/maya-tabsh/research-2.jpg", caption: "Primary research, UAE, 2026" },
+        { src: "media/maya-tabsh/research-3.jpg", caption: "Primary research, UAE, 2026" },
+        { src: "media/maya-tabsh/research-4.jpg", caption: "John Berger, Ways of Seeing, London, 1972" }
+      ]
+    },
+    cases: [
+      { src: "media/maya-tabsh/case-1.jpg", caption: "Sarah Polley, Stories We Tell, 2012",
+        note: "I am interested in how Polley explores the reliability of memory through different accounts of shared events. While her film reconstructs a family history, my project investigates why two people raised together can develop different memories and perspectives." },
+      { src: "media/maya-tabsh/case-2.jpg", caption: "Laura Wright, Twinstallation, 2015",
+        note: "I am interested in how Wright explores twin identity and disputed memories. While her work focuses on differences in recollection and memory ownership, my project investigates how shared experiences can shape two individuals differently." },
+      { src: "media/maya-tabsh/case-3.jpg", caption: "Lamia Joreige, Objects of War, 1999–ongoing",
+        note: "I am interested in how Joreige presents different personal accounts of a shared history without establishing one definitive version. While her work explores collective history through individual memories, my project focuses on how a shared upbringing can produce different experiences and identities." },
+      { src: "media/maya-tabsh/case-4.jpg", caption: "Shirin Neshat, Turbulent, 1998",
+        note: "I am interested in how Neshat presents two contrasting perspectives while allowing them to coexist. While her work explores differences shaped by gender and cultural expectations, my project investigates how people raised in similar circumstances can develop different perspectives." },
+      { src: "media/maya-tabsh/case-5.jpg", caption: "Jane and Louise Wilson, A Free and Anonymous Monument, 2003",
+        note: "I am interested in how the Wilsons explore different perspectives of the same physical environments. While their work focuses on how places can be experienced and interpreted differently, my project investigates how a shared childhood environment can shape different memories, emotions, and identities." }
+    ],
+    experiments: [
+      { src: "media/maya-tabsh/exp-1.jpg", caption: "Childhood House Layout",
+        learned: "My twin and I independently drew the layout of our childhood home from memory and attached memories to each room. I then printed both drawings on tracing paper, layered them, and scanned the result to reveal where our recollections aligned and differed. The experiment explores how people can remember the same physical space differently, showing that memory is subjective and reconstructed rather than an exact record of the past." },
+      { src: "media/maya-tabsh/exp-2.mp4", caption: "Memory Timeline",
+        learned: "For this experiment, my twin and I each identified nine significant childhood memories. I then categorized them based on age, emotion, intensity, and lasting impact. I used p5.js to translate this data into abstract visuals arranged chronologically. The experiment highlights how, despite growing up together, we remember different moments as significant and attach different emotional weight to our experiences. It explores how a shared upbringing doesn’t necessarily result in the same memories shaping who we become." },
+      { src: "media/maya-tabsh/exp-3.jpg", caption: "Memory Prompt",
+        learned: "For this experiment, my twin and I independently responded to the same memory prompts. I translated our responses into strips of paper and physically interwove them to create a visual representation of our memories. The experiment explores how the same prompt can trigger different memories and associations, while the weaving represents how our individual experiences remain connected through a shared childhood. It highlights how two different perspectives can coexist without one necessarily being more accurate than the other." }
+    ],
+    practical: {
+      make: "Next semester, I plan to develop Two Truths into a multi-screen interactive installation that explores how two people can share the same upbringing but experience and remember their childhood differently. Using abstract visuals driven by data from my experiments, I aim to highlight the similarities, differences, and overlaps between our memories.",
+      showed: "My visual experiments revealed how a shared upbringing can produce different defining memories and different perspectives. The timelines highlighted differences in emotional significance, while the layered house drawings revealed inconsistencies in what memories and emotions we attach to the same space. The interwoven memories showed how different associations can remain connected.",
+      questions: "How can I balance abstraction and storytelling so the audience can connect with the project without knowing the personal memories behind it?\nHow can I create an experience that encourages viewers to reflect on their own memories and relationships rather than simply observing mine?"
+    }
+  },
   { name: "James Torio" }
 ];
