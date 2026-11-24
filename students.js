@@ -115,7 +115,59 @@ window.STUDENTS = [
       questions: "Should the animation and the game be one experience or two?\nHow do I show “before” without making the past look perfect?\nHow much of my real test data should the game use?"
     }
   },
-  { name: "Shams Aboulkheir" },
+  {
+    name: "Shams Aboulkheir",
+    keywords: ["Parental Control", "Autonomy", "Decision-Making", "Identity", "Internalized Expectations"],
+    title: "ما تبقّى\nWhat Remains",
+    question: "How does growing up under parental control shape young Egyptian women’s ability to make independent decisions when they become responsible for their own choices?",
+    abstract: "ما تبقّى (What Remains) explores how growing up under parental control may shape young Egyptian women’s ability to make independent decisions in adulthood. Within families, parental involvement can emerge from love, protection, fear, and cultural expectations, making the boundary between guidance and control difficult to define. This research focuses on what happens when women become responsible for their own choices, whether through physical separation from their families or the gradual transition into adulthood.\nThrough academic research, personal accounts, and visual experiments, the project investigates how parental expectations may continue influencing decisions even when direct supervision is reduced or absent. Rather than assuming that parental control is inherently harmful, it examines how women experience, question, maintain, or reconsider the values and expectations they grew up with.\nThe findings will inform the development of a short film next semester, translating these experiences into a cinematic narrative about independence and identity.",
+    theme: "This project investigates how parental control within Egyptian families may shape young women’s independence, identity, and decision-making. It explores how parental expectations can remain influential as women assume responsibility for their own choices, while examining the complex relationship between love, protection, and control and how these experiences differ across individuals.",
+    relevance: "This topic is relevant to young Egyptian women developing independence while maintaining close family relationships, and to parents who may view their involvement as love and protection. By exploring both perspectives, the project encourages reflection on how family expectations influence personal choices and the complex boundary between parental care and control.",
+    motivation: "I chose this topic because I am interested in how upbringing continues to influence our choices as we grow older. I want to explore how women distinguish their own desires from internalized parental expectations, even when they have the freedom to decide independently, while understanding the complex relationship between parental love, protection, and control.",
+    theoretical: {
+      text: "01: Primary Research: Interactive Games\n\nI developed three interactive games exploring decision-making, parental influence, and the distinction between protection and control. The games encouraged reflection but provided limited insight into participants’ underlying motivations.\n\n02: Secondary Research: Real Women’s Stories\n\nPublished accounts of Egyptian women revealed that independence develops gradually through responsibilities, personal choices, and changing family relationships.\n\n03: Secondary Research: Psychological Studies\n\nResearch by Dwairy and Menshar and Kağıtçıbaşı highlighted how parental control, autonomy, emotional closeness, and cultural context interact.\n\n04: Secondary Research: Film Analysis\n\nSouad, Feathers, and The Brink of Dreams offered different cinematic perspectives on identity, expectations, and responsibility, informing my approach to visual storytelling.",
+      images: [
+        { src: "media/shams-aboulkheir/research-1.jpg", caption: "ما تبقّى | What Remains, Interactive Research Games Simulated Results, Sharjah, UAE, 2026" },
+        { src: "media/shams-aboulkheir/research-2.jpg", caption: "Real-Life Stories: Farah Rafik, The Trials and Tribulations of Living Alone as a Woman in Egypt, Egyptian Streets, Egypt, 2022" },
+        { src: "media/shams-aboulkheir/research-3.jpg", caption: "Psychological Research: Çiğdem Kağıtçıbaşı, Autonomous-Related Self, conceptual framework, Turkey, 2013. (Adapted diagram)" },
+        { src: "media/shams-aboulkheir/research-4.jpg", caption: "Film Research: Ayten Amin, Souad, Egypt, 2020. (Film still)" }
+      ]
+    },
+    cases: [
+      { src: "media/shams-aboulkheir/case-1.jpg", caption: "Ayten Amin, Souad, 2020",
+        note: "My film focuses on how parental expectations continue shaping independent decisions in adulthood, rather than adolescent identity struggles." },
+      { src: "media/shams-aboulkheir/case-2.jpg", caption: "Nada Riyadh & Ayman El Amir, The Brink of Dreams, 2024",
+        note: "My film focuses on how upbringing influences personal choices, rather than women’s struggles against social expectations." },
+      { src: "media/shams-aboulkheir/case-3.jpg", caption: "Asmae El Moudir, The Mother of All Lies, 2023",
+        note: "My film explores how parental control shapes adult decisions through fiction, rather than documentary reconstruction of family history." },
+      { src: "media/shams-aboulkheir/case-4.jpg", caption: "Mariam Abu Ouf & Kamla Abu Zekry, A Girl Named Zat, 2013",
+        note: "My film focuses on how parental expectations shape independent decisions, rather than exploring marriage, family responsibilities, and social change across decades." },
+      { src: "media/shams-aboulkheir/case-5.jpg", caption: "Mariam Abu Ouf, Leih La’a, 2020",
+        note: "My film explores how parental expectations influence decisions after independence, rather than the struggle to break away from them." }
+    ],
+    expFit: true,
+    experiments: [
+      { src: "media/shams-aboulkheir/exp-1.jpg", caption: "Composition and confinement",
+        learned: "Can framing communicate restriction without showing a controlling person? Does the viewer understand the emotional difference without any written explanation?" },
+      { src: "media/shams-aboulkheir/exp-2.jpg", caption: "Typography and internalized voices",
+        learned: "Can typography make a remembered parental instruction feel like an internal thought? The first image feels dominated by outside voices; the second gives the individual more visual authority. Which typography arrangement communicates psychological influence more effectively?" },
+      { src: "media/shams-aboulkheir/exp-3.jpg", caption: "Symbolism and ambiguity",
+        learned: "Can the same object suggest both care and control? One object can appear comforting or restrictive depending on its arrangement. Does changing the context alter its emotional meaning?" },
+      { src: "media/shams-aboulkheir/exp-4.jpg", caption: "Layering and accumulation",
+        learned: "How can repeated expectations be represented visually? The individual becomes progressively harder to see. At what point does the visual become too crowded to communicate clearly?" },
+      { src: "media/shams-aboulkheir/exp-5.jpg", caption: "Erasure, regret, and alternative choices",
+        learned: "Can erased marks suggest decisions that were never pursued? The erased paths remain faintly visible, suggesting possibilities that still exist in memory. Does erasure communicate absence better than simply crossing something out?" },
+      { src: "media/shams-aboulkheir/exp-6.jpg", caption: "Visual metaphor and perspective",
+        learned: "Can a protective barrier also appear restrictive? The glass may communicate safety from one angle and isolation from another. How much does the camera angle change the meaning of protection?" },
+      { src: "media/shams-aboulkheir/exp-7.jpg", caption: "Memory, repetition, and distortion",
+        learned: "How can visual distortion communicate the unreliability of memory? The images become less literal and more emotionally subjective. Which visual changes communicate memory without confusing the viewer?" }
+    ],
+    practical: {
+      make: "Next semester, I will create a fictional cinematic short film titled ما تبقّى (What Remains). The film will explore how parental expectations continue influencing a young Egyptian woman’s decisions even after she gains independence. Through visual storytelling, character development, and subtle emotional conflicts, I aim to examine the relationship between love, protection, control, and personal identity. The completed film is intended for presentation at the university’s final capstone exhibition and hopefully in cinemas and film festivals.",
+      showed: "My experiments showed that framing, typography, symbolism, layering, and visual distortion can communicate emotional restriction and internalized expectations without direct dialogue. The strongest approaches were those that used simple visual metaphors, such as barriers, erased choices, and accumulated expectations. However, some compositions became visually crowded or too abstract to communicate their intended meaning clearly. Moving forward, I want to combine subtle visual symbolism with realistic character actions and emotions.",
+      questions: "How can I conduct meaningful primary research on parental control and independence? Are there any simple, practical research methods or activities you would recommend?\nShould I keep my research and film specifically focused on Egyptian women, or broaden the scope to include Arab women in general?\nShould my film focus on women from a specific socioeconomic class, such as the lower class, or explore an experience of parental control that women across lower, middle, and upper classes can relate to?"
+    }
+  },
   {
     name: "Elhassan Ahmed",
     keywords: ["Format", "Medium", "Listening", "Reinvention", "Object"],
@@ -380,7 +432,7 @@ window.STUDENTS = [
     relevance: "Change rarely announces itself: after a loss, an illness or any big shift, people often only realise later how differently they feel. The project gives that unnoticed, in-between stage a form. It also shows the crab’s soft stage, the only time it grows, from its own side, rather than as the hard specimen or food we usually see.",
     motivation: "This project started from something personal. When my mum was diagnosed with cancer, the way I deal with my emotions changed: I used to keep them at a distance, and now I let myself feel them. I only noticed the change once it had happened. Moulting caught my attention because a crab also changes without protection, slowly, out of sight.",
     theoretical: {
-      text: "Crabs have long been pictured hard and finished, as specimens or food, yet research shows the soft stage changes behaviour as much as the body: crabs stop feeding and hide until the new shell hardens. With strong evidence that crabs are sentient, this stage is likely felt, though, as Uexküll and Nagel remind us, never fully knowable from outside. People pass through something similar: Turner called it the liminal stage, and Massumi describes change felt in the body before it can be named. My own tests on a crab shell showed the same pattern: it softened and changed colour between my checks, and I only noticed afterwards.",
+      text: "Crabs are usually pictured hard and finished: on a plate, or pinned in a museum drawer. The research tells a softer story. Before moulting, a crab stops eating, swells with water until its shell splits, and backs out in about fifteen minutes. The new shell takes days to harden, so the crab hides in seagrass or under rocks and waits (Wolcott and Hines, 1990). Being soft changes what it does, not just its body. Crabs will even give up a safe shelter to avoid pain, so this stage is probably felt, though I’ll never know what it’s like to be one. People have soft stages too: Turner called it the liminal stage, when you’re no longer who you were and not yet who you’ll be, often hidden away. Massumi describes change landing in the body before it has a name. So I bought a crab from the fish market and tested it myself. In vinegar and citric acid, the shell turned soft and translucent orange, and every time, it changed while I wasn’t looking.",
       images: [
         { src: "media/hala-el-khatib/research-1.jpg", caption: "Stage 1: Intermoult (hard crab). Rheanna Brett, Shutterstock, via A-Z Animals, 2025" },
         { src: "media/hala-el-khatib/research-2.jpg", caption: "Stage 2: Ecdysis (buster, backing out of the shell). Mary Hollinger, NOAA, Tangier Island, Virginia, 1999" },
@@ -410,7 +462,7 @@ window.STUDENTS = [
         learned: "I soaked a matching piece in citric acid to compare speeds. It softened faster than in vinegar, in 5 hours instead of 12, but once dry the shell was weaker: speeding up the soft stage left it more fragile." }
     ],
     practical: {
-      make: "A time-based work, shown in a gallery space, that lets visitors pass through a soft stage without noticing it. Its final form is still open: an installation, a moving-image piece, or objects that change during the show. What stays fixed are the rules: real crab timings and materials, change too slow to see, and text that never names a feeling, only what a body does.",
+      make: "The final piece will be a work, likely time-based, that lets visitors pass through a soft stage without quite noticing it. Its form is still open and will grow out of the experiments. What stays fixed are the rules: real crab timings and materials, change too slow to see, and text that never names a feeling, only what a body does.",
       showed: "What worked: I tested shell pieces in different acids (vinegar, citric acid, vitamin C). In vinegar, the shell became soft, bendable and translucent, the closest to a soft stage without a live moult. What failed: the changes happened between my checks, so I missed them, and the shell lost its blue-green colour, turning a translucent orange. What I keep: the softened shell, backlit as a skin, and the finding that change is only noticed afterwards.",
       questions: "Does the work still read as being about crabs if I never show a whole crab?\nShould the viewer go through the change themselves, or watch something else go through it?\nHow do I keep it personal while letting the crab stay a crab?"
     }
@@ -652,7 +704,7 @@ window.STUDENTS = [
         learned: "I collected draped cloths from Europe, Latin America, Africa, South and Southeast Asia, and the Middle East, with their names. It shows that the same rectangle of cloth gets different names depending on region and use, which is your “one cloth, many names” argument. It also stops you from treating “dupatta” as the only name in the story." },
       { src: "media/hana-safeer/exp-2.mp4", caption: "Photo shoots",
         learned: "I photographed the similar kind of cloth on different people in different styles: the navy sheer over a printed kurta and jeans, the maroon with a gold border over a black top, and the white net with chikankari.\nI’m testing what makes a cloth read as a dupatta. If a plain navy one can pass as a “scarf”, the name depends on styling and context, not the fabric, which supports my “the edit before the name” idea." },
-      { caption: "12 interviews with a recognition question",
+      { src: "media/hana-safeer/exp-3.mp4", caption: "12 interviews with a recognition question",
         learned: "I showed the cloth and asked what people call it. Most said dupatta or shawl, one said headscarf, one tablecloth.\nIt’s my main test of whether the rename changes recognition for the people who wear it. The two outliers show that context can change what the cloth reads as." },
       { src: "media/hana-safeer/exp-4.jpg", caption: "Image comparison",
         learned: "It shows what was removed (colour, embroidery, border, matching set) before the name changed. It turns an impression into something you can point at." },
