@@ -118,16 +118,16 @@ window.STUDENTS = [
   {
     name: "Shams Aboulkheir",
     keywords: ["Parental Control", "Autonomy", "Decision-Making", "Identity", "Internalized Expectations"],
-    title: "ما تبقّى\nWhat Remains",
+    title: "What\nRemains",
     question: "How does growing up under parental control shape young Egyptian women’s ability to make independent decisions when they become responsible for their own choices?",
-    abstract: "ما تبقّى (What Remains) explores how growing up under parental control may shape young Egyptian women’s ability to make independent decisions in adulthood. Within families, parental involvement can emerge from love, protection, fear, and cultural expectations, making the boundary between guidance and control difficult to define. This research focuses on what happens when women become responsible for their own choices, whether through physical separation from their families or the gradual transition into adulthood.\nThrough academic research, personal accounts, and visual experiments, the project investigates how parental expectations may continue influencing decisions even when direct supervision is reduced or absent. Rather than assuming that parental control is inherently harmful, it examines how women experience, question, maintain, or reconsider the values and expectations they grew up with.\nThe findings will inform the development of a short film next semester, translating these experiences into a cinematic narrative about independence and identity.",
+    abstract: "What Remains explores how growing up under parental control may shape young Egyptian women’s ability to make independent decisions in adulthood. Within families, parental involvement can emerge from love, protection, fear, and cultural expectations, making the boundary between guidance and control difficult to define. This research focuses on what happens when women become responsible for their own choices, whether through physical separation from their families or the gradual transition into adulthood.\nThrough academic research, personal accounts, and visual experiments, the project investigates how parental expectations may continue influencing decisions even when direct supervision is reduced or absent. Rather than assuming that parental control is inherently harmful, it examines how women experience, question, maintain, or reconsider the values and expectations they grew up with.\nThe findings will inform the development of a short film next semester, translating these experiences into a cinematic narrative about independence and identity.",
     theme: "This project investigates how parental control within Egyptian families may shape young women’s independence, identity, and decision-making. It explores how parental expectations can remain influential as women assume responsibility for their own choices, while examining the complex relationship between love, protection, and control and how these experiences differ across individuals.",
     relevance: "This topic is relevant to young Egyptian women developing independence while maintaining close family relationships, and to parents who may view their involvement as love and protection. By exploring both perspectives, the project encourages reflection on how family expectations influence personal choices and the complex boundary between parental care and control.",
     motivation: "I chose this topic because I am interested in how upbringing continues to influence our choices as we grow older. I want to explore how women distinguish their own desires from internalized parental expectations, even when they have the freedom to decide independently, while understanding the complex relationship between parental love, protection, and control.",
     theoretical: {
       text: "01: Primary Research: Interactive Games\n\nI developed three interactive games exploring decision-making, parental influence, and the distinction between protection and control. The games encouraged reflection but provided limited insight into participants’ underlying motivations.\n\n02: Secondary Research: Real Women’s Stories\n\nPublished accounts of Egyptian women revealed that independence develops gradually through responsibilities, personal choices, and changing family relationships.\n\n03: Secondary Research: Psychological Studies\n\nResearch by Dwairy and Menshar and Kağıtçıbaşı highlighted how parental control, autonomy, emotional closeness, and cultural context interact.\n\n04: Secondary Research: Film Analysis\n\nSouad, Feathers, and The Brink of Dreams offered different cinematic perspectives on identity, expectations, and responsibility, informing my approach to visual storytelling.",
       images: [
-        { src: "media/shams-aboulkheir/research-1.jpg", caption: "ما تبقّى | What Remains, Interactive Research Games Simulated Results, Sharjah, UAE, 2026" },
+        { src: "media/shams-aboulkheir/research-1.jpg", caption: "What Remains, Interactive Research Games Simulated Results, Sharjah, UAE, 2026" },
         { src: "media/shams-aboulkheir/research-2.jpg", caption: "Real-Life Stories: Farah Rafik, The Trials and Tribulations of Living Alone as a Woman in Egypt, Egyptian Streets, Egypt, 2022" },
         { src: "media/shams-aboulkheir/research-3.jpg", caption: "Psychological Research: Çiğdem Kağıtçıbaşı, Autonomous-Related Self, conceptual framework, Turkey, 2013. (Adapted diagram)" },
         { src: "media/shams-aboulkheir/research-4.jpg", caption: "Film Research: Ayten Amin, Souad, Egypt, 2020. (Film still)" }
@@ -319,7 +319,6 @@ window.STUDENTS = [
     name: "Suha Alassar",
     keywords: ["Materiality", "Preservation", "Authenticity", "Perceived Value", "Controlled Deterioration"],
     title: "Controlled Decay",
-    subtitle: "What Makes Damage Meaningful?",
     question: "How do authentic and artificially recreated signs of deterioration influence the perceived value of photographic film and printed photographs?",
     abstract: "Controlled Decay explores how physical deterioration affects the perceived value of photographic materials. Beginning with family archives, I want to investigate whether imperfections are valued for their appearance, history, or personal connections. Through research and material experiments, I will compare authentic deterioration, artificially created damage, and digital restoration. These findings will guide the development of my capstone next semester, with the possibility of exploring other analog media or a different direction.",
     theme: "The project’s aim is to investigate how authentic and artificially recreated deterioration influences the value of photographic materials. The project questions whether deliberately creating damage changes how we perceive authenticity.",
@@ -456,9 +455,9 @@ window.STUDENTS = [
     experiments: [
       { src: "media/hala-el-khatib/exp-1.jpg", caption: "Two ways of seeing: the specimen",
         learned: "I photographed a blue swimmer crab shell laid out flat on white, the way science shows animals: finished, still and distant. While drying, its colour shifted from blue-green to orange-brown." },
-      { caption: "Unshelling in vinegar",
+      { src: "media/hala-el-khatib/exp-2.jpg", caption: "Unshelling in vinegar",
         learned: "I soaked the shell in white vinegar for 12 hours to dissolve its calcium. The hard shell became soft, bendable and translucent, the closest I can get to a soft stage without a live moult." },
-      { caption: "Unshelling in citric acid",
+      { src: "media/hala-el-khatib/exp-3.jpg", caption: "Unshelling in citric acid",
         learned: "I soaked a matching piece in citric acid to compare speeds. It softened faster than in vinegar, in 5 hours instead of 12, but once dry the shell was weaker: speeding up the soft stage left it more fragile." }
     ],
     practical: {
@@ -673,7 +672,7 @@ window.STUDENTS = [
       "What is being said? When the scarf is called “Scandinavian”, do posts and listings mention the dupatta, South Asia or the women who wear it, and who gets credit?",
       "What is felt? What does the dupatta mean to South Asian women in Sharjah, and how do they feel when it is renamed?"
     ],
-    abstract: "",
+    abstract: "Woven from the Same Thread/Scand-upatta looks at what happens when a garment is renamed online. In 2024, the South Asian dupatta was presented on TikTok as a ‘Scandinavian scarf’, and the debate that followed was revolved around credit and appropriation. I am not assuming the name erased the dupatta but rather I am testing it. I am building a dated archive of captions, listings and comments, comparing it with how people in Sharjah name the same draped cloth (dupatta, chunni, shayla, hijab and others) and, through interviews, how South Asian women feel about the rename. My photo shoots and regional name dictionary are the first experiments. Next semester the research becomes a time-based work: a looping time-based piece built from the archive and the voices of participants, possibly with an analog layer that adds more depth to the project.",
     theme: "This project is about language: what a name does to a familiar object that always existed. My focus is on one garment, one name, and one city. The objective is to show how a name can change the cultural meaning attached to a garment, and whose knowledge becomes visible or overlooked when that happens. I use ’appropriation’ as a working word, and I treat ’erasure’ as something to test.",
     relevance: "Trends travel through names, captions and hashtags as much as images do. The project matters to South Asian women, who get to describe their own relationship with the garment. It matters to tailors and fabric sellers in Sharjah, who may name the same cloth differently. It matters to design students, who need to think about credit and context, and to social media audiences, who may not notice how much a caption shapes what they remember. It is deliberately narrow and doesn’t claim to cover cultural appropriation across fashion.",
     motivation: "I chose this topic because it’s unsettling to see something I grew up with get a new identity under the pretence of a ’trend.’ The controversy made me question why a garment can be recognised as fashionable under one name while its existing cultural associations become less visible under another. As a design student, I also want the project to include lived experiences rather than relying entirely on online arguments. Speaking to South Asian women in Sharjah will help me understand that a dupatta is not just a symbol of cultural heritage; it can also have different meanings depending on the person, their personal connection to it, and how they choose to wear it.",
@@ -682,7 +681,7 @@ window.STUDENTS = [
       images: [
         { src: "media/hana-safeer/research-1.mp4", caption: "TikTok (@amtulsahmed and @christybaral_), online, 2025" },
         { src: "media/hana-safeer/research-2.jpg", caption: "TikTok (@purefemininemuse), online, 2025. Screenshot taken Nov 2026" },
-        { caption: "Hana’s photography, Sharjah, 2026" },
+        { src: "media/hana-safeer/research-3.mp4", caption: "Hana’s photography, Sharjah, 2026" },
         { caption: "Google Search, UAE, 2026. Screen recording taken Nov 2026" }
       ]
     },
@@ -700,7 +699,7 @@ window.STUDENTS = [
     ],
     expFit: true,
     experiments: [
-      { caption: "Regional name dictionary",
+      { src: "media/hana-safeer/exp-1.mp4", caption: "Regional name dictionary",
         learned: "I collected draped cloths from Europe, Latin America, Africa, South and Southeast Asia, and the Middle East, with their names. It shows that the same rectangle of cloth gets different names depending on region and use, which is your “one cloth, many names” argument. It also stops you from treating “dupatta” as the only name in the story." },
       { src: "media/hana-safeer/exp-2.mp4", caption: "Photo shoots",
         learned: "I photographed the similar kind of cloth on different people in different styles: the navy sheer over a printed kurta and jeans, the maroon with a gold border over a black top, and the white net with chikankari.\nI’m testing what makes a cloth read as a dupatta. If a plain navy one can pass as a “scarf”, the name depends on styling and context, not the fabric, which supports my “the edit before the name” idea." },
