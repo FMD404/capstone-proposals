@@ -1,9 +1,9 @@
 window.STUDENTS = [
   {
     name: "Dima Abdelhadi",
-    keywords: ["Nafs", "Tacit knowledge", "Food heritage", "Identity", "Embodied knowledge"],
+    keywords: ["Nafs", "Tacit Knowledge", "Food Heritage", "Identity", "Embodied Knowledge"],
     title: "Nafs\nMama",
-    question: "How can the “nafs” behind family recipes be understood, documented, and passed down to help preserve the knowledge needed to recreate traditional dishes?",
+    question: "How can the “Nafs” behind family recipes be understood, documented, and passed down to help preserve the knowledge needed to recreate traditional dishes?",
     subQuestions: [
       "What makes up the “special touch” in family cooking, and how do personal techniques, sensory judgments, experience, and small adjustments influence the final taste of a dish?",
       "How does watching someone cook influence the way small gestures, techniques, and decisions are learned and understood compared to written recipes?"
@@ -172,7 +172,7 @@ window.STUDENTS = [
     name: "Elhassan Ahmed",
     keywords: ["Format", "Medium", "Listening", "Reinvention", "Object"],
     title: "Side C",
-    subtitle: "Formats designed around what a song means",
+    subtitle: "Formats for songs",
     question: "Can a song’s format become part of the song, and can artists design formats for their own music?",
     subQuestions: [
       "What does a song gain or lose when its format is chosen for what it means?",
@@ -221,7 +221,7 @@ window.STUDENTS = [
   },
   {
     name: "Haneen Ahmed",
-    keywords: ["Intergenerational knowledge", "Food heritage", "Domestic labour", "Cultural memory", "Women’s knowledge"],
+    keywords: ["Intergenerational Knowledge", "Food Heritage", "Domestic Labour", "Cultural Memory", "Women’s Knowledge"],
     title: "The Things a Recipe\nCannot Tell You",
     question: "How are Egyptian cooking practices passed down and transformed across generations, reflecting changes in family roles, labour, and tradition?",
     subQuestions: [
@@ -419,7 +419,7 @@ window.STUDENTS = [
   },
   {
     name: "Hala El Khatib",
-    keywords: ["Moulting", "Soft stage", "Liminality", "Affect", "Vulnerability"],
+    keywords: ["Moulting", "Vulnerability", "Liminality", "Affect", "Soft Stage"],
     title: "The Soft\nHours",
     question: "How can the stages of crustacean moulting become a visual and material language for vulnerability and change?",
     subQuestions: [
@@ -468,10 +468,9 @@ window.STUDENTS = [
   },
   {
     name: "Joud Elayan",
-    keywords: ["Surveillance", "Self-recognition", "Dystopian", "Behavioral habituation", "Speculative design"],
+    keywords: ["Surveillance", "Self-recognition", "Dystopian installation", "Behavioral habituation", "Speculative film"],
     title: "Unseen",
-    subtitle: "Surveillance, Anonymity, and the Prohibition of Self-Recognition",
-    question: "When a regime strips away names, faces, and mirrors, does removing self-recognition make citizens easier to control, or does external surveillance lose its power once normalized?",
+    question: "If a regime bans mirrors and faces, does removing self-recognition enforce obedience or weaken control?",
     subQuestions: [
       "Does seeing one’s own reflection enforce rule compliance more effectively than being watched by an external camera?",
       "How quickly do people habituate to visible monitoring, and where do they seek blind spots when self-awareness is removed?"
@@ -522,7 +521,7 @@ window.STUDENTS = [
   },
   {
     name: "Shahad Muallemi",
-    keywords: ["Time perception", "Task-switching", "Interruptions", "Attention", "Time pressure"],
+    keywords: ["Time Perception", "Task Switching", "Interruptions", "Attention", "Time Pressure"],
     title: "Time\nUnnoticed",
     question: "How does switching between tasks affect people’s perception and experience of time throughout the day?",
     abstract: "This project explores how switching between tasks affects people’s perception and experience of time throughout the day. It asks why time can feel limited, even when the actual amount of time available remains constant, and how interruptions, divided attention, and competing responsibilities contribute to this feeling. Through theoretical research and primary experiments, the project investigates the relationship between task-switching, engagement, and the experience of time. The findings suggest that switching between tasks and frequent interruptions divide our attention, fragmenting our time and making it pass unnoticed. Building on these findings, the project will develop into an animation next semester, exploring how everyday activities, distractions, and unfinished tasks shape our experience of time and create a sense of time pressure. It will investigate how these experiences can be communicated visually through movement and fragmented sequences, connecting time perception with the familiar feeling of having too much to do.",
@@ -620,7 +619,7 @@ window.STUDENTS = [
     name: "Fatema Pardiwala",
     keywords: ["Human–AI interaction", "Sycophancy", "Simulated understanding", "Absurdity", "Intimacy"],
     title: "Between You, Me\n& the Machine",
-    question: "How can an interactive experience explore the role of simulated understanding in normalizing absurd and intimate conversations between humans and AI?",
+    question: "How can an interactive experience explore the role of simulated understanding and sycophancy in normalizing absurd and intimate conversations between humans and AI?",
     abstract: "We have normalized a world that once belonged to speculative fiction, where confiding in a machine has become normal and human interaction shrinks a little more each day. People now turn to chatbots for advice, confessing secrets and asking questions they may never ask another person. This project explores how simulated understanding draws out themes of absurdity and intimacy in human–AI conversation. Through two surveys, 40 WildChat conversations (2023–24) and anonymous chats shared on social media in 2025–26, I found that earlier models followed two scripts, deflecting absurd messages while comforting intimate ones. Today's chatbots match users' energy, hear them out and remember them, performing simulated understanding ever closer to a human. For visual experiments I started by iterating ways to translate the database visually using TouchDesigner. Next semester, I plan to experiment with more mediums that allow me to build an interactive installation. An idea that I'm exploring is a robot slot machine, where visitors queue beside each other for a turn with a machine, confronting a future we have already accepted.",
     theme: "This project explores the relationship between people and AI chatbots, now turned to for advice, emotional support and companionship, from absurd questions to intimate confessions. The objective is to understand how their constant availability, agreeableness and lack of judgement shape how people talk to them, and what happens when a machine can simulate understanding without the complexities of human connection.",
     relevance: "AI chatbots are part of everyday life: always available and reassuring, they offer an easy alternative to human conversation. Emotional use is about 2.9% of conversations (Anthropic, 2025), yet heavier users report more loneliness and dependence (Phang et al., 2025). In the UAE, 69.1% of university students have used a chatbot, most often Snapchat's My AI (Dabou et al., 2025).",
@@ -717,7 +716,7 @@ window.STUDENTS = [
   },
   {
     name: "Maya Tabsh",
-    keywords: ["Subjective memory", "Nature vs. nurture", "Childhood", "Twin identity", "Memory reconstruction"],
+    keywords: ["Memory Reconstruction", "Twin Identity", "Childhood", "Nature vs. Nurture", "Subjective Memory"],
     title: "Two\nTruths",
     question: "Does sharing the same upbringing necessarily mean sharing the same childhood?",
     abstract: "“Two Truths” explores the relationship between childhood memory, identity, and perception through the experiences of twins raised together. Although twins share the same upbringing and many childhood events, they can develop different personalities, perspectives, and memories. Drawing from my personal experience as a fraternal twin, this project asks: Does sharing the same upbringing necessarily mean sharing the same childhood? Rather than determining whose memories are correct, I want to understand why two people can remember and experience the same events differently. Through research on memory reconstruction, twin identity, and nature versus nurture, alongside interviews and visual experiments with my twin brother, I will investigate how individual experiences shape our understanding of a shared past.",
