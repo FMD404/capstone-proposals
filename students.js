@@ -706,6 +706,7 @@ window.STUDENTS = [
         learned: "I photographed the similar kind of cloth on different people in different styles: the navy sheer over a printed kurta and jeans, the maroon with a gold border over a black top, and the white net with chikankari.\nI’m testing what makes a cloth read as a dupatta. If a plain navy one can pass as a “scarf”, the name depends on styling and context, not the fabric, which supports my “the edit before the name” idea." },
       { src: "media/hana-safeer/exp-3.mp4", caption: "12 interviews with a recognition question",
         learned: "I showed the cloth and asked what people call it. Most said dupatta or shawl, one said headscarf, one tablecloth.\nIt’s my main test of whether the rename changes recognition for the people who wear it. The two outliers show that context can change what the cloth reads as." },
+      { src: "media/hana-safeer/exp-3b.mp4", caption: "12 interviews with a recognition question" },
       { src: "media/hana-safeer/exp-4.jpg", caption: "Image comparison",
         learned: "It shows what was removed (colour, embroidery, border, matching set) before the name changed. It turns an impression into something you can point at." },
       { src: "media/hana-safeer/exp-5.jpg", caption: "Colour and glitch treatments of the shayla images",
