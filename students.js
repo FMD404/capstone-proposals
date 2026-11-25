@@ -502,8 +502,6 @@ window.STUDENTS = [
         note: "THX 1138 depicts numbered, uniform citizens governed by panoptic cameras on screen, whereas Unseen extends that cinematic world into a live exhibition space that measures how visitors habituate to monitoring." }
     ],
     experiments: [
-      { caption: "First Minute vs. Tenth Minute Habituation Test",
-        learned: "Next semester, I plan on filming participants in a monitored room for ten minutes to compare their posture and compliance in the first minute against the tenth. This tested Chen and Zhan’s (2026) finding that visible surveillance loses its effect once monitoring becomes routine." },
       { src: "media/joud-elayan/exp-3.jpg", caption: "CAAD CCTV and Blind-Spot Mapping",
         learned: "I mapped every visible CCTV camera across CAAD and photographed the architectural blind spots outside their sightlines. This visual study identified how physical spaces create pockets of evasion, informing the layout of my installation." },
       { src: "media/joud-elayan/exp-3b.mp4", caption: "CAAD CCTV Cameras",
@@ -513,7 +511,7 @@ window.STUDENTS = [
       { src: "media/joud-elayan/exp-5.mp4", caption: "CCTV Identity and Reflection Erasure Test",
         learned: "I processed CCTV footage using Artkit to black out every person’s face and any reflective surfaces, leaving only greyscale silhouettes and posture visible. This tested how clearly an observer can still read human obedience and hesitation when all facial identity and self-reflection are erased." }
     ],
-    experimentsNote: "Next semester, I will place a “TAKE ONE ONLY” sign beside a bowl under four conditions: a blank wall, printed eyes, a live webcam feed, and a mirror, and record rule breaking. This planned experiment will test whether self-recognition enforces obedience more effectively than external monitoring.",
+    experimentsNote: "Next semester, I will place a “TAKE ONE ONLY” sign beside a bowl under four conditions: a blank wall, printed eyes, a live webcam feed, and a mirror, and record rule breaking. This planned experiment will test whether self-recognition enforces obedience more effectively than external monitoring.\nNext semester, I plan on filming participants in a monitored room for ten minutes to compare their posture and compliance in the first minute against the tenth. This tested Chen and Zhan’s (2026) finding that visible surveillance loses its effect once monitoring becomes routine.",
     practical: {
       make: "Next semester, I will build an interactive audiovisual installation for the CAAD Capstone Exhibition at the American University of Sharjah. Extending my film Unseen, the space pairs multichannel projection and physical regime artifacts, gas masks, numbered IDs, and mirror-ban notices, with a real-time TouchDesigner and p5.js tracking system. Visitors enter an observation zone with no reflective surfaces, follow simple spatial prompts while tracked, and confront live data visualisations of their compliance and blind-spot behavior upon exiting.",
       showed: "Across five experiments, automated pedestrian tracking and face and object erasure worked best, stripping identity while keeping posture readable. In the rule and masked-versus-mirrored film tests, mirrors enforced obedience and self-consciousness, whereas static printed eyes and visible cameras failed as subjects habituated by minute ten. CAAD camera mapping also exposed clear architectural blind spots. Moving forward, I will keep live numbered tracking, reflection erasure, and spatial blind spots.",
@@ -587,8 +585,8 @@ window.STUDENTS = [
     cases: [
       { src: "media/shrinidhi-mukund/case-1.jpg", caption: "sibatable, Selected Instagram works (@sibatable), n.d.",
         note: "I explore how sight interacts with other senses to influence enjoyment and stopping." },
-      { src: "media/shrinidhi-mukund/case-2.jpg", caption: "QimmyShimmy, Selected Instagram works (@qimmyshimmy), n.d.",
-        note: "I investigate sensory enjoyment during actual eating rather than visual discomfort alone." },
+      { src: "media/shrinidhi-mukund/case-2.jpg", caption: "Laila Snevele, Phygital Seasoning (@sensory_table_design), n.d.",
+        note: "I explore how changing or reducing sensory inputs influences enjoyment and stopping behaviour rather than using sensory associations to shape taste perception." },
       { src: "media/shrinidhi-mukund/case-3.jpg", caption: "Marije Vogelzang, Volumes, n.d.",
         note: "I explore how reducing or combining sensory inputs affects enjoyment and stopping." },
       { src: "media/shrinidhi-mukund/case-4.jpg", caption: "Heston Blumenthal, Sound of the Sea, 2007",
