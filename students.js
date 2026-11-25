@@ -678,8 +678,8 @@ window.STUDENTS = [
       images: [
         { src: "media/hana-safeer/research-1.mp4", caption: "TikTok (@amtulsahmed and @christybaral_), online, 2025" },
         { src: "media/hana-safeer/research-2.jpg", caption: "TikTok (@purefemininemuse), online, 2025. Screenshot taken Nov 2026" },
-        { src: "media/hana-safeer/research-3.mp4", caption: "Hana’s photography, Sharjah, 2026" },
-        { caption: "Google Search, UAE, 2026. Screen recording taken Nov 2026" }
+        { src: "media/hana-safeer/research-3.mp4", caption: "Different Cloths around the world, online, Screenshots taken Nov 2026." },
+        { src: "media/hana-safeer/research-4.mp4", caption: "Google Search, UAE, 2026. Screen recording taken Nov 2026" }
       ]
     },
     cases: [
